@@ -26,7 +26,7 @@ class _karSongTwelveState extends State<karSongTwelve> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongTwelveState extends State<karSongTwelve> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "12.	ஒவாக் கணைபாய வொல்கி யெழில்வேழந்\n    தீவாய்க் குருதி யிழிதலாற் செந்தலைப்\n    பூவலங் குன்றம் புயற்கேற்ற போன்றவெ\n    காவிரி நாடன் கடாஅய்க் கடிதாகக்\n   கூடாரை யட்ட களத்து",
+                    "12.	மையெழி லுண்கண் மயிலன்ன சாயலாய்\nஐயந்தீர் காட்சி யவர்வருதல் திண்ணிதாம்\nநெய்யணி குஞ்சரம் போல விருங்கொண்மூ\nவைகலு மேரும் வலம்.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "ovāk kaṇaipāya volki yeḻilvēḻan\ntīvāyk kuruti yiḻitalāṟ centalaip\npūvalaṅ kuṉṟam puyaṟkēṟṟa pōṉṟave\nkāviri nāṭaṉ kaṭāayk kaṭitākak\nkūṭārai yaṭṭa kaḷattu",
+                    "maiyeḻi luṇkaṇ mayilaṉṉa cāyalāy\naiyantīr kāṭci yavarvarutal tiṇṇitām\nneyyaṇi kuñcaram pōla viruṅkoṇmū\nvaikalu mērum valam.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the king of the land of Cauvery\nSlaughtered the unfriendly foes\nIn spiteful speed, \nThe handsome elephants\nGrew weak in limbs\nIn the endless pouring of arrows;\nAnd smeared in smirching blood\nFlamboyant\nResembled\nHillocks of red rock\nAfter a drench of rain.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom where River Cauviri flows, \nHas killed his enemies in quick succession\nBy driving his forces, \nAs the dynamic elephants having fainted\nOn account of incessant piercing of arrows, \nAre pouring down heavy blood of the colour of fire;\nAnd they look as if the Red Hills having red colour area\nare bathing in the fall of rain.\n\n3.	In the field of battle where the king of the Cauvery region killed his enemies making a furious attack with his army, the stately elephants continuously pierced by arrows became enfeebled with fire-like blood flowing down their bodies. In such a plight they looked like crimson mounds of sand drenched by rain.",
+                    "1.	Of dazzling eyes collyrium washed\nAnd of peacock mien!\nLike unto\nElephants smeared with oil\nTwo enormous clouds\nCircle clock-wise\nDawn after dawn.\nOur lord\nOf discerning insight\nWill be back.\nIt is certain.\n\n2.	O, my lady having eyes painted with collyrium,\nwhich are black and beautiful\nAnd having the resemblance in features\nlike that of a peacock,\nThe dark clouds which look like\nthe smeared elephants, are rising up daily towards right;\nIt's certain that our hero known for his knowledge\nof certainty, would return this season and now.\n\n3.	O lady with lovely black eyes painted with collyrium and charming like the peacock, like elephants smeared with oil the black clouds rise each day in the sky on the night, so our lord who is wise without being assailed by any doubts, will, to be sure, return home.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

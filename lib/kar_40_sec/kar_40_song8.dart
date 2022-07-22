@@ -11,12 +11,9 @@ class _karSongEightState extends State<karSongEight> {
   @override
   Widget build(BuildContext context) {
 
-
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-
           leading: IconButton(
             onPressed: (){
               Navigator.pop(context);
@@ -26,7 +23,7 @@ class _karSongEightState extends State<karSongEight> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +38,39 @@ class _karSongEightState extends State<karSongEight> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "1.	நாண்ஞாயி றுற்ற செருவிற்கு வீழ்ந்தவர்\n   வாண்மாய் குருதி களிறுழக்கத் - தாண்மாய்ந்து\n   முன்பசு லெல்லாங் குழம்பாகிப் பின்பகல்\n   துப்புத் துகளிற் கெழூஉம் புனனாடான்\n   தப்பியா ரட்ட களத்து.",
+                    "8.	மண்ணியன் ஞாலத்து மன்னும் புகழ்வேண்டிப்\nபெண்ணிய னல்லாய் பிரிந்தார் வால்கூறும்\nகண்ணிய லஞ்சனங் தோய்ந்தபோற் காயாவும்\nநுண்ணுரும் பூழ்த்த புறவு.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "nāṇñāyi ṟuṟṟa ceruviṟku vīḻntavar\nvāṇmāy kuruti kaḷiṟuḻakkat - tāṇmāyntu\nmuṉpacu lellāṅ kuḻampākip piṉpakal\ntupput tukaḷiṟ keḻūum puṉaṉāṭāṉ\ntappiyā raṭṭa kaḷattu.",
+                    "maṇṇiyaṉ ñālattu maṉṉum pukaḻvēṇṭip\npeṇṇiya ṉallāy pirintār vālkūṟum\nkaṇṇiya lañcaṉaṅ tōyntapōṟ kāyāvum\nnuṇṇurum pūḻtta puṟavu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the monarch of the land\nOf vitalizing waters\nSlaughtered his escaping foes,\nThe gushing gore\nFrom the gaping wounds opened with swords\nOf those\nWho thronged in the morn\nOnly to fall in the fight\nSlushed under the feet of elephants\nAll through the forenoon\nCoagulated into red crystalline dust\nAnd rose up to the sky\nIn the afternoon.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River\nCauviri, has killed his enemies,\nThe blood which was bleeding by pressing\nof the swords of the warriors\nwho having reached at sunrise,\nhad died at the Warfield,\nOn being stirred up by the male elephants with their feet\nhad turned like macerated slime during the forenoon;\nAnd in the afternoon, it looks like the particles\nof red-coral, spreading through out the sky.\n\n3.	The  Chozha king Senganan of the riverine plains  killed the erring enemies who had come to the field of battle in the morning; the war elephants ploughed with their feet the ground whereon gushed the blood from the sword  wounds of the bodies of the enemy army. The ground became blood-miry in the morning sun; and in the evening the soil-soaked blood now becoming dry and broken was blown by the wind into the sky like coral dust.",
+                    "1.	Lady of endearing virtues;\nIn forests and groves,\nThe weebuds of Kaya flowers,\nLooking as if\nThey have been drenched\nIn collyrium salve\nWith which\nEyes are washed and fed,\nAre now in bloom.\nThey speak\nOf our lord's return,\nWho left our company\nSeeking to perpetuate his fame\nIn this earthly world.\n\n2.	O, damsel having full feminine grace,\nlook at the forests where doth bloom\nThe slender buds of purple-coloured 'Kaya' plants\nlike the collyrium painted o'er eye-lids;\nYes, they do suggest the return of our hero\nwho parted thee earlier\nAnd proceeded in pursuit of wealth, in order\nto maintain enduring fame on this earth.\n\n3.	O lady with good womanly characteristics; the jungles that with little Kaya buds ablooming resemble maids with collyrium painted eyes foretell the return home of our lord, who aspiring for lasting fame on this sand-made world departed.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

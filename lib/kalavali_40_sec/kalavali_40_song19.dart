@@ -41,12 +41,11 @@ class _kalavaliSongNineteenState extends State<kalavaliSongNineteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
                     "19.	இடைமருப்பின்விட்டெறிந்தவெஃகங்கான் மூழ்திக்\n     கடைமணி காண்வரத் தோற்றி - நடைமெலிந்து\n     முக்கோட்ட போன்ற களிறெல்லா நீர்நாடன்\n     புக்கம ரட்ட களத்து.",
@@ -55,17 +54,26 @@ class _kalavaliSongNineteenState extends State<kalavaliSongNineteen> {
                       fontSize: 11,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "iṭaimaruppiṉviṭṭeṟintaveḵkaṅkāṉ mūḻtik\nkaṭaimaṇi kāṇvarat tōṟṟi - naṭaimelintu\nmukkōṭṭa pōṉṟa kaḷiṟellā nīrnāṭaṉ\npukkama raṭṭa kaḷattu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "1.	In the field of battle\nWhere the king of the land\nOf copiously flowing waters\nFought in person and slew his foes, \nThe piercing steel\nSank deeply into the flesh\nIn between the two horns\nLeaving only its handle in sight.\nThe elephant\nUnable to move or sink\nSeemed to have grown\nThree horns.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by river Cauviri, \nHas entered and killed his enemies, \nWith the spear flung at the middle of the tusks, \nThe shaft of the spear being thrust in the tusks\nAnd its handle alone being sighted, \nAll the elephants so seen faltering are looking\nAs if they're having three tusks.\n\n3.	In the battlefield where the king of the riverine plains entering killed his enemies, the javelins aimed and thrown between the tusks of elephants pierced to the depth of the extreme joint which was visible. The javelins thus sticking up between the tusks of elephants looked as if the animals which now appeared greatly weakened had three tusks instead of two!",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

@@ -41,12 +41,11 @@ class _kalavaliSongThirtynineState extends State<kalavaliSongThirtynine> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
                     "39.	மைந்துகால் யாத்து மயங்கிட ஞாட்பினுட்\n    புய்ந்துகால் போகிப் புலான்முகந்த வெண்குடை\n    பஞ்சிபெய் தாலமே போன்ற புனனாடன்\n    வஞ்சிக்கோ வட்ட களத்து",
@@ -55,17 +54,26 @@ class _kalavaliSongThirtynineState extends State<kalavaliSongThirtynine> {
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "maintukāl yāttu mayaṅkiṭa ñāṭpiṉuṭ\npuyntukāl pōkip pulāṉmukanta veṇkuṭai\npañcipey tālamē pōṉṟa puṉaṉāṭaṉ\nvañcikkō vaṭṭa kaḷattu",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nVanquished his foe,\nThe king of Vanchi,\nStruggling to their feet\nThe warriors stayed on;\nTheir legs caught\nIn the mire and the mud\nAnd the white umbrellas\nTheir stems broken\nLay aslant and sunk\nTaking in\nThe strewn pieces of flesh\nResembling\nA crimson earth\nOf crushed Banyan fruits.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed Cheraman kanaikkaal Irumporai,\nthe Chera king who ruled o'er the Chera kingdom,\nfrom his capital town 'vanchi',\nThe white royal umbrella is unable to proceed\non account of the fetters, caused by the crowding warriors,\nSince its poles are getting torn off at the war;\nAnd it looks like a salver into which\nthe paste of red-cotton is poured.\n\n3.	In the battlefield where the king of the riverine plain killed the king of Vanchi, in the thick of the flight where warriors of unflinching valour crowding participated, the royal white umbrellas with their handles plucked away and filled with red flesh looked like vessels filled with red-cotton juice.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

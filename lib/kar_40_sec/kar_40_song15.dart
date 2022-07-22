@@ -26,7 +26,7 @@ class _karSongFifteenState extends State<karSongFifteen> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongFifteenState extends State<karSongFifteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "15.	கொல்யானை பாயக் குடைமுருக்கி யெவ்வாயும்\n     புக்கவா யெல்லாம் பிணம்பிறங்கத் - தச்சன்\n     வினைபடு பள்ளிறிய் றோன்றும் செங்கட்\n     சினமால் பொருத களத்து",
+                    "15.	திருந்திழாய் காதலர் தீர்குவ ரல்லர்\nகுருந்தின் குவியிண ருள்ளுறை யாகத்\nதிருந்தி னிளிவண்டு பாட விருந்தும்பி\nஇன்குழ லூதும் பொழுது.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "kolyāṉai pāyak kuṭaimurukki yevvāyum\npukkavā yellām piṇampiṟaṅkat - taccaṉ\nviṉaipaṭu paḷḷiṟiy ṟōṉṟum ceṅkaṭ\nciṉamāl poruta kaḷattu",
+                    "tiruntiḻāy kātalar tīrkuva rallar\nkuruntiṉ kuviyiṇa ruḷḷuṟai yākat\ntirunti ṉiḷivaṇṭu pāṭa viruntumpi\niṉkuḻa lūtum poḻutu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere Sen Kan Chozhan\nOf great rage\nFought against his foes, \nEverywhere\nFell to pieces\nThe flagmasts and umbrellas\nAs elephants\nEnraged to killing\nRushed here and there;\nCarcasses piled and scattered\nIn all places\nResembling\nA carpenter's place of work.\n\n2.	In the battle-field, where Chengatcholan\nthe indignant red-eyed King of the Chola kingdom, \nhas killed his enemies, \nAs his murderous elephants are breaking\ntheir royal umbrellas and pouncing on\nin all the directions, \nAll the places they have so entered have become\nthe places of piles of corpses;\nAnd they look like the workshops where carpenters\nare engaged in carpentry.\n\n3.	In the battlefield where the furious king Senganmal waged war, deadly elephants, attacked and destroyed all round the royal umbrellas of enemies and in the places where the elephants entered (in the fray) corpses lay scattered and the whole field looked like the place where carpenters worked.",
+                    "1.	Damsel of discerning decor!\nOur lord\nWill not long remain\nIn separation.\nFor the wasps\nMaking their home\nIn the curved insides\nOf the dangling shoots\nOf kurunthai palm\nAre intoning in clarity;\nThe hovering insects\nAre piping melodiously.\n\n2.	O, my lady adorned with jewels, the beetles are raising\nthe melody of the fifth cerebral tone of the gamut,\nBy occupying the inside area of the closed cluster\nof Kurunthai tree of fragrant foliage, as safe resting-place;\nAnd the black dragon-flies are humming,\non getting honey from the flowers;\nAt such a time, our hero won't stay there leaving thee here,\nto suffer from impatience of separation further.\n\n3.	O lady with attractive jewels! The beetles taking up their abode in the curved clusters of blooms of the Kurunthai tree hums the rich, sweet tune, while the black beetles sing a sweet tune; at a time such as this, our lord will not stay away from us.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

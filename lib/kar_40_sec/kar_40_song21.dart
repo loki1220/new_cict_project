@@ -26,7 +26,7 @@ class _karSongTwentyOneState extends State<karSongTwentyOne> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongTwentyOneState extends State<karSongTwentyOne> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "21.	இணைவே லெழின்மருமத் திங்கப்புண் கூர்ந்து\n     கணையலைக் கொல்கிய யானை - துணையிலவாய்த்\n     தொல்வலி யாற்றித் துளங்கினவாய் மெல்ல\n     நிலங்கால் கவரு மலைபோன்ற செங்கட்\n     சினமால் பொருத களத்து.",
+                    "21.	பொறிமாண் புனைதிண்டேர் போந்த வழியே\nசிறுமுல்லைப் போதெல்லாஞ் செவ்வி  நறுநுதற்\nசெல்வ மழைந்தடங்கட் சின்மொழிப் பேதைவாய்\nமுள்ளெயி றேய்ப்ப வடிந்து.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 10,
+                      fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "iṇaivē leḻiṉmarumat tiṅkappuṇ kūrntu\nkaṇaiyalaik kolkiya yāṉai - tuṇaiyilavāyt\ntolvali yāṟṟit tuḷaṅkiṉavāy mella\nnilaṅkāl kavaru malaipōṉṟa ceṅkaṭ\nciṉamāl poruta kaḷattu.",
+                    "poṟimāṇ puṉaitiṇṭēr pōnta vaḻiyē\nciṟumullaip pōtellāñ cevvi  naṟunutaṟ\ncelva maḻaintaṭaṅkaṭ ciṉmoḻip pētaivāy\nmuḷḷeyi ṟēyppa vaṭintu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the battlefield\nWhere Sen Kan Chozhan\nOf great fury\nFought and slew,\nThe entwined spears\nPenetrated deep\nInto their breasts;\nAnd the elephants\nGrown weak in limbs\nBy the shifting steel\nWith no drivers to guide\nShorn of their strength\nShivered and fell\nGrasping the land with their legs\nSinking in the land with their legs\nSinking in slow degrees\nAs mountains slide\nFlattened to the ground.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom, has waged war,\nThe elephants which have excessive wounds\nOn account of the brace spears going deep\nInto their beautiful breasts,\nAnd have got fainted by the distress\nCaused by the infliction of arrows,\nAre now derelicts which have lost\nTheir earlier strength and are now drooping;\nThey thus look like mountains which are grasping\nThe land with their legs.\n\n3.	In the field of battle where the king Senganmal waged war, well-fitted out javelin's piercing their strong breasts and wounding them deeply, and greatly staggered by the fast flying arrows, the elephants losing their riders and losing their wonted strength trembling collapsed on the ground, looking like mountains, grasping the earth with their legs.",
+                    "1.	The strong chariot\nCarved magnificently\nAnd set with contrivances\nTraversed\nBy this very same route.\nLook at the little mullai buds\nGlistening sharp as the teeth\nOf the fond maiden\nSparse in speech,\nOf handsomely fair forehead,\nOf cool, wide eyes –\nCool as fertilizing rains.\n\n2.	Throughout the route of the decorated and strong chariot\nfitted with excellent mechanism, which is on its\nreturn journey,\nThe buds of little 'mullai' flowers are getting sharp points\nand they look like the sharp teeth in the mouth of\nthe damsel\nWho's having a graceful perfumed forehead,\nand large cold eyes like copious rain and who speaks not\nmuch but a few words!\n(Yes, this is the season we should return home!)\n\n3.	All along the road by which the chariot came, the chariot well decorated and strong with many a unique mechanical device the little jasmine buds (about to bloom) with sharp ends resemble the sharp teeth in the mouth of the simple lady with a lovely fragrant forehead, with eyes wide and cool like copious showers who breathes out soft words.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

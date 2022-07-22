@@ -26,7 +26,7 @@ class _karSongTwentyfiveState extends State<karSongTwentyfive> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongTwentyfiveState extends State<karSongTwentyfive> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "25.	மலைகலங்கப் பாயு மலைபோ னிலைகொள்ளாக்\n     குஞ்சரம் பாயக் கொடி யெழுந்து பொங்குபு\n     வானந் துடைப்பன போன்ற புனனாடன்\n     மேவாரை யட்ட களத்து",
+                    "25.	கருங்கால் வரகின் பொரிப்போ லரும்புவிழ்ந்\nதீர்ந்தண் புறவிற் றெறுழிவீ மலர்ந்தன\nசேர்ந்தன செய்குறி வாரா ரவரென்று\nகூர்ந்த பசலை யவட்கு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "malaikalaṅkap pāyu malaipō ṉilaikoḷḷāk\nkuñcaram pāyak koṭi yeḻuntu poṅkupu\nvāṉan tuṭaippaṉa pōṉṟa puṉaṉāṭaṉ\nmēvārai yaṭṭa kaḷattu",
+                    "karuṅkāl varakiṉ porippō larumpuviḻn\ntīrntaṇ puṟaviṟ ṟeṟuḻivī malarntaṉa\ncērntaṉa ceykuṟi vārā ravareṉṟu\nkūrnta pacalai yavaṭku.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	All along the forest,\nWet and cool,\nLike unto the flakes\nOf Varagu corn\nOf black husk\nThe theruzh buds\nHave opened and bloomed.\nAll tokens\nOf the lord's return\nHave occurred.\nWon't he be back home yet?\nThe damsel grows pale.\n\n2.	The buds of theruzh, have opened\nand bloomed in the cold forest,\nLike the parched grain of millet\nwhich is having black-coloured foot;\nYes, the indications foretold by our hero have come true\nand the sallowness has spread\no'er the body of this heroine,\nSince she has come to the conclusion\nthat he won't return now as promised – what to do?\n\n3.	In the cool, cool jungle, the therezhvee buds open their petals and so bloom resembling the fried grain of the black stalked varagu plant; the signs specified by the hero have all appeared; so concluding that the hero will not return, the lady-love's sallowness has thickened in her.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                   " 1.	In the field of battle\nWhere the king of the land\nOf copious waters\nSlew the advancing foes,\nElephants standing firm\nUprooted other elephants\nLike mountains uprooting mountains\nAnd the flags afluttering\nFlew up and furled\nAs if\nCleansing the skies.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed his enemies,\nAs the elephants are firmly pouncing\nLike the act of mountains which strike against mountains\nAnd nonplus them,\nThe standards tied on their heads are rising up,\nand waving, as if they are sweeping the sky.\n\n3.	In the field of battle where the king of the riverine plains killed his enemies, like mountain strangling a mountain shatteringly, elephants with their rear legs firmly rooted sprang on the enemy elephants and when they did so, the ensigns housed on their backs rose high and flapped as if they brushed the very skies!",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

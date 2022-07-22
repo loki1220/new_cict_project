@@ -26,7 +26,7 @@ class _karSongThirtyState extends State<karSongThirty> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtyState extends State<karSongThirty> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "30.	மடங்க வெறிந்து மலையுருட்டு நீர்போல்\n    தடங்கொண்ட வொண்குருதி கொள்களி றீர்க்கு\n    மடங்கா மறமொய்ம்பிற் சினமால்\n    அடங்காரை யட்ட களத்து.",
+                    "30.	வரைமல்க வானஞ் சிறப்ப வுறைபோழ்ந்\nதிருநிலந் தீம்பெய றாழ விரைநாற\nஊதை யுளரு நறுந்தண்கா பேதை\nபெருமட நம்மாட் டுரைத்து.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 14,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "maṭaṅka veṟintu malaiyuruṭṭu nīrpōl\ntaṭaṅkoṇṭa voṇkuruti koḷkaḷi ṟīrkku\nmaṭaṅkā maṟamoympiṟ ciṉamāl\naṭaṅkārai yaṭṭa kaḷattu.",
+                    "varaimalka vāṉañ ciṟappa vuṟaipōḻn\ntirunilan tīmpeya ṟāḻa viraināṟa\nūtai yuḷaru naṟuntaṇkā pētai\nperumaṭa nammāṭ ṭuraittu.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	Fertilizing the hilly tracts,\nCleansing the skies,\nAnd penetrating the rich soil\nThe sweet showers have fallen –\nFragrance everywhere,\nThe chill breeze babbles\nOf the fond waiting\nOf a fond woman.\n\n2.	The mountain region is flowering with fertility\nand the cloud is being abundant;\nThe pleasant rain is falling and cutting the vast expanse\nof earth, with its drops;\nThe sweet fragrance is spreading everywhere;\nAnd the cold wind waffles in the sweet-scented\ncold pleasure-grove;\nIt reminds me of the artlessness of my beloved\n(O, my heart, I should return right now!).\n\n3.	The sweet rains enriching the hills and endowing the skies, pouring down in torrents and cutting across the vast earth, sweet odour emanates, the winter wind apprising us of the great simplicity of the lady love will stop without moving at the cool fragrant grove (So drive the chariot home fast).",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere Sen Kan Chozhan\nOf leonine\nStrength, valour and fury\nSlaughtered the recalcitrant foes,\nLike unto the flood\nThat uproots mountains\nAnd rolls them on\nSo did\nThe expanding flood\nOf shining grisly gore\nRoll in its course\nThe slain elephants.\n\n2.	In the battlefield, where Changatcholan the red-eyed\nKing of the Chola kingdom,\nWho has imposing shoulders and breast\nAnd renowned for untumbled bravery\nHas killed his enemies, who are raging in wrath,\nThe bright blood-flood which is widespread like the water-flood\nWhich uproots the mountains,\nThrows them, making them roll and tumble,\nIs dragging the slain elephants\nAlong with it.\n\n3.	In the field of war where the red-eyed furious Senganan of unflinching valour killed his foes, like the flooding water dashing against the rocks and rolling down the huge boulders, the vast shinning flood of blood dragged the dead elephants along.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

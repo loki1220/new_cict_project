@@ -26,7 +26,7 @@ class _karSongTwentyState extends State<karSongTwenty> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongTwentyState extends State<karSongTwenty> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "20.	இரிசிறக ரீர்க்குப் பரப்பி யெருவை\n    குருதி பிணங்கவருந் தோற்றம் - அதிர்விலாச்\n    சீர்முழாப் பண்ணமைப்பான் போன்ற புனனாடன்\n    நேராரை யட்ட களத்து.",
+                    "20.	வீறுசால் வேந்தன் வினையு முடிந்தன\nஆறும் பதமினிய வாயின ஏறோ\nடருமணி நாக மனுங்கச் செருமன்னர்\nசேனைபோற் செல்லு மழை.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "iriciṟaka rīrkkup parappi yeruvai\nkuruti piṇaṅkavarun tōṟṟam - atirvilāc\ncīrmuḻāp paṇṇamaippāṉ pōṉṟa puṉaṉāṭaṉ\nnērārai yaṭṭa kaḷattu.",
+                    "vīṟucāl vēntaṉ viṉaiyu muṭintaṉa\nāṟum patamiṉiya vāyiṉa ēṟō\nṭarumaṇi nāka maṉuṅkac cerumaṉṉar\ncēṉaipōṟ cellu maḻai.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nSlew his opposing foes,\nThe vultures\nFlapping their feathers\nUnder the two wings\nGorged at the corpses\nDrenched in gore;\nThe spectacle and sound\nResembling\nA musician and his small drum\nAnd the perfectly rhythmic beats.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the chola kingdom watered by river Cauviri,\nHas killed his enemies,\nThe scene of vultures spreading their wings\nAnd seizing the corpses from which blood is flowing out,\nAppears as if one who is trying to set tune\nHis drum which raises no tremolo.\n\n3.	In the battlefield where the king of the riverine plains killed his enemies, the eagles spreading the roots of their wings wide and clawing the bloody corpses looked like a person setting right the drums lacking the proper tune.",
+                    "1.	The king heroic -\nHis task has ended.\nThe path is clear, sweet,\nInviting and ready.\nThe rain-laden clouds\nAre torturing\nThe crown-jewelled serpents\nLike unto armies\nPouring arrows in the field\nOf watering chieftains.\n\n2.	The war activities of the king of greatness\nhave come to an end;\nThe path has become firm and smooth for travel;\nAnd the clouds are moving, like the army of the\nking who wages war,\nWith the noise of the thunderbolt causing affliction\nto cobras which are having\ngems on their heads\n(so, let us start for our home!).3.	The duties relating to the war of the renowned king are ended; the roads have become agreeably sweet to traverse; the clouds sending forth peals of thunder grieving the snakes with rare gems in their heads move along like a warring army (on the march). So it is time for us to return home.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

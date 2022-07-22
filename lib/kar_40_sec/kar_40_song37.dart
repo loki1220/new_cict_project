@@ -26,7 +26,7 @@ class _karSongThirtysevenState extends State<karSongThirtyseven> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtysevenState extends State<karSongThirtyseven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "37.	அரசர் பிணங்கான்ற நெய்த்தோர் முரசொடு\n    முத்தடைக் கோட்ட களிறீர்ப்ப - எத்திசையும்\n    பெளவம் புணரம்பி போன்ற புனனாடன்\n    தெவ்வரை யட்ட களத்து",
+                    "37.	கருங்கடல் மேய்ந்த கமஞ்சூ லெழிலி\nஇருங்க லிறுவரை யேறி யியுர்க்கும்\nபெரும்பதக் காலையும் வாரார்கொல் வேந்தன்\nஅருந்தொழில் வாய்த்த நமர்.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 13,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "aracar piṇaṅkāṉṟa neyttōr muracoṭu\nmuttaṭaik kōṭṭa kaḷiṟīrppa - etticaiyum\npeḷavam puṇarampi pōṉṟa puṉaṉāṭaṉ\ntevvarai yaṭṭa kaḷattu",
+                    "karuṅkaṭal mēynta kamañcū leḻili\niruṅka liṟuvarai yēṟi yiyurkkum\nperumpatak kālaiyum vārārkol vēntaṉ\naruntoḻil vāytta namar.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	Pasturing on black sea brine\nComely clouds pregnant\nHave strayed up\nThe neighbouring ranges\nOf rocks and hills\nTo unburden.\nThese are days\nOf wealth and comfort.\nOur lord,\nDestined to serve the king,—\nWon't he be back?\n\n2.	The teeming cloud, full of moisture, which had drunk\nthe waters of the black sea,\nHad ascended to the top of high mountain\nand now showers down as rain;\nSo would not our hero, who proceeded on royal orders\nto the war-field, be returning now,\nEven at this opportune time,\non accomplishing his act?\n(Yes, he will return now!)\n\n3.	Even when the greatly impregnated clouds, drunk deep at the black sea, climbing up the great bouldered slopes of the hill pour down rain, even at such greatly opportune hour, would not our lord, who went on a royal expedition return home?",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf copious waters\nSlew his hateful foes,\nThe corpses of kings\nShedding\nA flood of blood\nIn all directions\nWere swept in the tide\nThe horned elephants\nThe battle drums,\nAnd the pearls\nResembling\nA vast ocean and a fleet of ships.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by River Cauviri,\nHas killed his enemies,\nThe flood of blood shed by the corpses of dead kings\nOn the opposite side, is dragging along\nIn all the directions,\nThe elephants which are wearing\nPearl-stitched ornamental cloth on their faces,\nAre having long tusks and carrying their royal drums\nO'er them and which are since dead;\nThe flood of blood looks like an ocean\nAnd the dead elephants like the ships\nSailing on it.\n\n3.	In the field of war where the king of the riverine plains killed his enemies, the blood gushing out of the bodies of kings, dragged along in the current all round the war drums, and the fallen elephants with pearl bearing tusks. This looked like the wavy sea with the ships moving on the waves.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

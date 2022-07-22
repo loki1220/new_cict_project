@@ -26,7 +26,7 @@ class _karSongSixteenState extends State<karSongSixteen> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongSixteenState extends State<karSongSixteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "16.	பரும வினமாக் கடவித் தெரிமறவர்\n     ஊக்கி யெடுத்த வரவத்தி னார்ப்பஞ்சாக்\n     குஞ்சரக் கும்பத்துப் பாய்வன குன்றிவரும்\n     வேங்கை யிரும்புலி போன்ற புனனாடன்\n     வேந்தரை யட்ட களத்து",
+                    "16.	கருங்குயில் கையற மாமயி லாலப்\nபெருங்கலி வான முரறும்  பெருந்தோள்\nசெயலை யிளந்தளி ரன்னநின் மேனிப்\nபசலை பழங்கூண் கொள்.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "paruma viṉamāk kaṭavit terimaṟavar\nūkki yeṭutta varavatti ṉārppañcāk\nkuñcarak kumpattup pāyvaṉa kuṉṟivarum\nvēṅkai yirumpuli pōṉṟa puṉaṉāṭaṉ\nvēntarai yaṭṭa kaḷattu",
+                    "karuṅkuyil kaiyaṟa māmayi lālap\nperuṅkali vāṉa muraṟum  peruntōḷ\nceyalai yiḷantaḷi raṉṉaniṉ mēṉip\npacalai paḻaṅkūṇ koḷ.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nSlaughtered the rival kings, \nThe horses in armored plates\nDriven by the choicest of horsemen\nNeighed in resounding echoes\nAnd jumped on the heads\nOf elephants fearless\nResembling\nTigers of ferocity\nPouncing on prey\nAmong the hills.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by river Cauviri, \nHas killed his enemy king, \nThe destroyers of fine race which are having saddles, \nBeing ridden by the warriors of excelling prowess, \nAre raising great tumultuous noise and pouncing on\nThe frontal globe of the prehead of elephants\nWhich do not get frightened by the said noise;\nIt looks like the act of a large tiger\nWhich is rushing at a huge mountain.\n\n3.	In the field of war where king Senganmal of the riverine plains killed his enemy kings, saddled horses in battle array, ridden by courageous cavalrymen, spring on the forehead of elephants which are unmoved by the great uproar raised by warriors with gusto. Such action of the steeds looked like the large striped tiger springing on a rock.",
+                    "1.	The black cuckoo\nHas become silent;\nThe proud peacock\nIs in ecstatic dance;\nThe clattering clouds\nRumble in the sky;\nBroad-shouldered lady,\nThe paleness of your complexion.\nPale as the Asoka tendril,\nWill become a thing of the past.\n\n2.	O, my lady having large shoulders,\nthe black cuckoos are in distress without knowing\nwhat to do;\nThe peafouls keep raising a screech;\nand the clouds are making a loud noise with rolling\nof thunder;\nAnd it's just to make sallowness of the body\nwhich was like the tender sprout of the Asoka\ntree, to wane;\nYes it's the very same time, our hero would return\nto delight thee now.\n\n3.	O mistress with big shoulders! The sallowness on thy body lovely like the tender shoots of the Asoka (Peepul) tree will fade out; the black koel will plunge into grief helplessly; the huge peacocks filled with joy will dance, because the vast thunderclouds have begun to peal.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

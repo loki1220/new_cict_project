@@ -41,12 +41,11 @@ class _kalavaliSongTwentyState extends State<kalavaliSongTwenty> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
                     "20.	இரிசிறக ரீர்க்குப் பரப்பி யெருவை\n    குருதி பிணங்கவருந் தோற்றம் - அதிர்விலாச்\n    சீர்முழாப் பண்ணமைப்பான் போன்ற புனனாடன்\n    நேராரை யட்ட களத்து.",
@@ -55,17 +54,26 @@ class _kalavaliSongTwentyState extends State<kalavaliSongTwenty> {
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "iriciṟaka rīrkkup parappi yeruvai\nkuruti piṇaṅkavarun tōṟṟam - atirvilāc\ncīrmuḻāp paṇṇamaippāṉ pōṉṟa puṉaṉāṭaṉ\nnērārai yaṭṭa kaḷattu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nSlew his opposing foes,\nThe vultures\nFlapping their feathers\nUnder the two wings\nGorged at the corpses\nDrenched in gore;\nThe spectacle and sound\nResembling\nA musician and his small drum\nAnd the perfectly rhythmic beats.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the chola kingdom watered by river Cauviri,\nHas killed his enemies,\nThe scene of vultures spreading their wings\nAnd seizing the corpses from which blood is flowing out,\nAppears as if one who is trying to set tune\nHis drum which raises no tremolo.\n\n3.	In the battlefield where the king of the riverine plains killed his enemies, the eagles spreading the roots of their wings wide and clawing the bloody corpses looked like a person setting right the drums lacking the proper tune.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

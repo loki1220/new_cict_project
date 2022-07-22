@@ -41,27 +41,32 @@ class _innaSongFortyState extends State<innaSongForty> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
-
                   Text("39.கொடுக்கும் பொருளில்லான் வள்ளன்மை யின்னா\n     கடித்தமைந்த பாக்கினுட் கற்படுத லின்னா\n     கொடுத்து விடாமை கவிக்கின்னா வின்னா\n     மடுத்துழிப் பாடா விடல்.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 10,
-                    ),),
+                      fontSize: 11,
+                    ),),  SizedBox(
+                    height: 15,
+                  ),
                   Text("koṭukkum poruḷillāṉ vaḷḷaṉmai yiṉṉā\nkaṭittamainta pākkiṉuṭ kaṟpaṭuta liṉṉā\nkoṭuttu viṭāmai kavikkiṉṉā viṉṉā\nmaṭuttuḻip pāṭā viṭal.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),  SizedBox(
+                    height: 15,
+                  ),
                   Text("1.	Miserable the charitable nature of one with nothing to give\nMiserable to bite a piece of stone while chewing betel nut\nMiserable for a poet not to be given presents\nAnd miserable\nNot to complete a poem interrupted.\n\n2.	Any munificence by one who doesn't hav\nenough wealth to donate, would cause misery\nShould there be any stone-like substance \nin a bitten arecanut, it would cause misery;\nIt'd cause misery, should a poet be not bestowed\nwith gifts and given a warm send-off;\nAnd it would cause misery if a patron is not sung in praise,\nout of gratitude, by a poet so patronized.\n\n3.	The liberality of the indigent is painful, a stone in the chewing nut is a painful thing; it is painful to send away a poet without gift; it will be distressful to break away from singing when some impediment intercedes; it will be painful to sing not where gifts are offered.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

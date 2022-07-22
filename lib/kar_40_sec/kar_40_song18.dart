@@ -26,7 +26,7 @@ class _karSongEighteenState extends State<karSongEighteen> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongEighteenState extends State<karSongEighteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "18.	நளிந்த கடலுட் டிமிறிசை போலெங்கும்\n     விளிந்தார் பிணங்குருதி யீர்க்குந் - தெளிந்து\n     தடற்றிடங் கொள்வாட் டளையவிழுந் தார்ச்சே(ய்)\n     உடற்றியா ரட்ட களத்து.",
+                    "18.	கல்பயில் கானங் கடந்தார் வரவாங்கே\nநல்லிசை யேறொடு வான நடுநிற்பச்\nசெல்வர் மனம்போற் கவினீன்ற நல்கூர்ந்தார்\nமேனிபோற் புல்லென்ற காடு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "naḷinta kaṭaluṭ ṭimiṟicai pōleṅkum\nviḷintār piṇaṅkuruti yīrkkun - teḷintu\ntaṭaṟṟiṭaṅ koḷvāṭ ṭaḷaiyaviḻun tārccē(y)\nuṭaṟṟiyā raṭṭa kaḷattu.",
+                    "kalpayil kāṉaṅ kaṭantār varavāṅkē\nnallicai yēṟoṭu vāṉa naṭuniṟpac\ncelvar maṉampōṟ kaviṉīṉṟa nalkūrntār\nmēṉipōṟ pulleṉṟa kāṭu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the youthful Sen Kan Chozhan\nOf sword that handsomely fits\nThe easily identifiable sheath\nSlaughtered his angering foes, \nThe swift current of blood\nSwept away the corpses\nResembling\nThe waves of the wide sea\nAnd the swirling vessels in tide.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom\nWho possesses the bright sword which occupies\nThe interior space of the ornamental scabbard\nAnd who is wearing the garland of blossomed flowers, \nHas killed his enemies who have enraged him, \nThe blood-flood is dragging along\nThe heap of corpses in all the directions, \nLike the waves in the sea which is vast in extent, \nAre dragging boats with persons therein.\n\n3.	In the field of battle where the king Sengannan bearing a shining sword in the scabbard and  wearing a loosening garland (round his neck) killed his enemies who infuriated him, the heaps of corpses were tossed about by waves of blood as boats by billows in the deep sea.",
+                    "1.	The clouds\nBellowing like a bull\nHave spread all over the sky;\nAnd pour down in rain.\nThe forests\nThat had lost their sheen\nLooking lean\nAs the poor and the impoverished\nHave turned lush and green\nAs the hearts of the rich.\nThe season has come\nFor our lord's return\nWho left us\nTraversing the hill terrain.\n\n2.	Our hero who had traversed forests covered with mounts,\nis returning home;\nAlong with his arrival, the forests which lost their splendour\nlike the body of an indigent person,\nAre now presenting an elegant look\nlike the mind of the wealthy people,\nAs the clouds with the growling thunderbolt\nare pouring rain impartially.\n\n.	At this very hour which is ripe for the return of our lord, who traversed the jungles studded with crowded hills, the clouds overhead with deafening thunder pour down rain all round, the jungles that formerly had faded like the body of the poverty-stricken, now, like the heart of the rich, have yielded charm.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

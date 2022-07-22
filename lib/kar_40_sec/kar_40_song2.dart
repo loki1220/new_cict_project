@@ -16,7 +16,6 @@ class _karSongTwoState extends State<karSongTwo> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-
           leading: IconButton(
             onPressed: (){
               Navigator.pop(context);
@@ -26,7 +25,7 @@ class _karSongTwoState extends State<karSongTwo> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +40,39 @@ class _karSongTwoState extends State<karSongTwo> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "1.	நாண்ஞாயி றுற்ற செருவிற்கு வீழ்ந்தவர்\n   வாண்மாய் குருதி களிறுழக்கத் - தாண்மாய்ந்து\n   முன்பசு லெல்லாங் குழம்பாகிப் பின்பகல்\n   துப்புத் துகளிற் கெழூஉம் புனனாடான்\n   தப்பியா ரட்ட களத்து.",
+                    "2.	கடுங்கதிர் நல்கூரக் கார்செல்வ மெய்த\nநெடுங்காடு நேர்சினை யீனக் கொடுங்குழாய்\nஇன்னே வருவர் நமரென் றெழில்வானம்\nமின்னு மவர்தூ துரைத்து.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "nāṇñāyi ṟuṟṟa ceruviṟku vīḻntavar\nvāṇmāy kuruti kaḷiṟuḻakkat - tāṇmāyntu\nmuṉpacu lellāṅ kuḻampākip piṉpakal\ntupput tukaḷiṟ keḻūum puṉaṉāṭāṉ\ntappiyā raṭṭa kaḷattu.",
+                    "kaṭuṅkatir nalkūrak kārcelva meyta\nneṭuṅkāṭu nērciṉai yīṉak koṭuṅkuḻāy\niṉṉē varuvar namareṉ ṟeḻilvāṉam\nmiṉṉu mavartū turaittu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the monarch of the land\nOf vitalizing waters\nSlaughtered his escaping foes,\nThe gushing gore\nFrom the gaping wounds opened with swords\nOf those\nWho thronged in the morn\nOnly to fall in the fight\nSlushed under the feet of elephants\nAll through the forenoon\nCoagulated into red crystalline dust\nAnd rose up to the sky\nIn the afternoon.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River\nCauviri, has killed his enemies,\nThe blood which was bleeding by pressing\nof the swords of the warriors\nwho having reached at sunrise,\nhad died at the Warfield,\nOn being stirred up by the male elephants with their feet\nhad turned like macerated slime during the forenoon;\nAnd in the afternoon, it looks like the particles\nof red-coral, spreading through out the sky.\n\n3.	The  Chozha king Senganan of the riverine plains  killed the erring enemies who had come to the field of battle in the morning; the war elephants ploughed with their feet the ground whereon gushed the blood from the sword  wounds of the bodies of the enemy army. The ground became blood-miry in the morning sun; and in the evening the soil-soaked blood now becoming dry and broken was blown by the wind into the sky like coral dust.",
+                    "1.	Lady of curved ear ornaments;\nImpoverishing the hot rays of the sun,\nAnd enriching the monsoon\nAnd enabling the extended forests\nAll their rich flora to bloom\nThe beautifully clouded sky\nBetokens through these harbingers\nThat our lord will be back,\nEven now.\nLook: the sky lightens.\n\n2.	Behold, O my lady wearing golden ear-rings,\nthe fire-rays of the Sun have become less hot;\nThe rainy season has brought prosperity;\nFlower-buds are budding in plenty\nthroughout the forest way;\nAnd the rising cloud is emitting lightning, yes, conveying\na message, as our hero's messenger,\nThat he would arrive now, at this moment,\nsince the season has approached.\n\n3.	O maid with a bent hollow pendant in the ear! The heat of the sun subsiding, the winter season mellowing in richness, the extensive jungles putting forth buds galore, the potent clouds as the envoy of our lover, announce by means of lightning, his return home at this very hour.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

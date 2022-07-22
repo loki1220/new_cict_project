@@ -26,7 +26,7 @@ class _karSongNineteenState extends State<karSongNineteen> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongNineteenState extends State<karSongNineteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "19.	இடைமருப்பின்விட்டெறிந்தவெஃகங்கான் மூழ்திக்\n     கடைமணி காண்வரத் தோற்றி - நடைமெலிந்து\n     முக்கோட்ட போன்ற களிறெல்லா நீர்நாடன்\n     புக்கம ரட்ட களத்து.",
+                    "19.	நாஞ்சில் வலவ னிறம்போலப் பூஞ்சினைச்\nசெங்கான் மராஅந் தகைந்தன  பைங்கோற்\nறொடிபொலி முன்கையாள் தோடுணையா வேண்டி\nநெடுவிடைச் சென்றதென் னெஞ்சு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "iṭaimaruppiṉviṭṭeṟintaveḵkaṅkāṉ mūḻtik\nkaṭaimaṇi kāṇvarat tōṟṟi - naṭaimelintu\nmukkōṭṭa pōṉṟa kaḷiṟellā nīrnāṭaṉ\npukkama raṭṭa kaḷattu.",
+                    "nāñcil valava ṉiṟampōlap pūñciṉaic\nceṅkāṉ marāan takaintaṉa  paiṅkōṟ\nṟoṭipoli muṉkaiyāḷ tōṭuṇaiyā vēṇṭi\nneṭuviṭaic ceṉṟateṉ ṉeñcu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf copiously flowing waters\nFought in person and slew his foes, \nThe piercing steel\nSank deeply into the flesh\nIn between the two horns\nLeaving only its handle in sight.\nThe elephant\nUnable to move or sink\nSeemed to have grown\nThree horns.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by river Cauviri, \nHas entered and killed his enemies, \nWith the spear flung at the middle of the tusks, \nThe shaft of the spear being thrust in the tusks\nAnd its handle alone being sighted, \nAll the elephants so seen faltering are looking\nAs if they're having three tusks.\n\n3.	In the battlefield where the king of the riverine plains entering killed his enemies, the javelins aimed and thrown between the tusks of elephants pierced to the depth of the extreme joint which was visible. The javelins thus sticking up between the tusks of elephants looked as if the animals which now appeared greatly weakened had three tusks instead of two!",
+                    "1.	The Kadamba flowers\nWith stalks,\nWhite as Balarama,\nThe conquering hero of the ploughshare,\nAnd red petals\nHave bloomed.\nMy heart\nJourneying across\nThe long forest\nSeeks already\nThe company of her shoulders\nHer forearms\nBangled green.\n\n2.	The 'Ma-raa-am' tree, which is having red-trunk\nwith flower-buds, gives a lovely appearance\nlike the complexion of the God Balarama, \nWho uses plough for His weapon;\nMy thought hence is traversing the long forest way\nand it's just to make the shoulders of my lady\nWho's having the elbow adorned\nwith beautiful golden bracelets, \nto be of help to me.\n\n3.	The Kadamba trees with lovely boughs white like the complexion of him who obtained victory with the plough as his weapon of war and with their tree trunks red in colour have bloomed; so my heart, with a view to secure for my embrace the shoulders of her on whose wrists shine rich (round) gold bangles, has already crossed the long jungly 'tract of land'.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

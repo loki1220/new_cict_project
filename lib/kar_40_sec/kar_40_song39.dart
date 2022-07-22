@@ -26,7 +26,7 @@ class _karSongThirtynineState extends State<karSongThirtynine> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtynineState extends State<karSongThirtynine> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "39.	மைந்துகால் யாத்து மயங்கிட ஞாட்பினுட்\n    புய்ந்துகால் போகிப் புலான்முகந்த வெண்குடை\n    பஞ்சிபெய் தாலமே போன்ற புனனாடன்\n    வஞ்சிக்கோ வட்ட களத்து",
+                    "39.	அலவன்க ணேய்ப்ப வரும்பீன் றவிழ்ந்த\nகருங்குர@ னொச்சிப் பசுந்தழை சூடி\nஇரும்புன மேர்க்கடி கொண்டார் பெருங்கெளவை\nஆகின்று நம்மூ ரவர்க்கு.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "maintukāl yāttu mayaṅkiṭa ñāṭpiṉuṭ\npuyntukāl pōkip pulāṉmukanta veṇkuṭai\npañcipey tālamē pōṉṟa puṉaṉāṭaṉ\nvañcikkō vaṭṭa kaḷattu",
+                    "alavaṉka ṇēyppa varumpīṉ ṟaviḻnta\nkaruṅkura@ ṉoccip pacuntaḻai cūṭi\nirumpuṉa mērkkaṭi koṇṭār peruṅkeḷavai\nākiṉṟu nammū ravarkku.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	The farm hand\nWearing the green foliag\nOf Nochi on their heads\nWhich yield bud\nLike unt\nThe eyes of a crab\nThat blossom late\nInto bunches of black\nHave brough\nThe extending land\nUnder the plough-staff\nOur lord, his non-return\nHas becom\nThe talk of our town.\n\n2.	The cultivators have commenced their ploughin\nof vast land suitable for dry grain\nDuly wearing the strung leaves of 'nocci\nwhich is having black-flower cluster\nWhich have bloomed after bearing the bud\nlike the eye of a crab\nAnd so the high calumny of countryside tal\nhas arisen in our village about our her\n(Since he has not returned yet, as promised).\n\n3.	The nochi plant has put forth buds, very like the eyes of the crab, and yielded clusters of blooms; wearing the green nochi leaves, the tillers have begun to plough the vast fields; so our village is filled with slander against our lord.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nVanquished his foe,\nThe king of Vanchi,\nStruggling to their feet\nThe warriors stayed on;\nTheir legs caught\nIn the mire and the mud\nAnd the white umbrellas\nTheir stems broken\nLay aslant and sunk\nTaking in\nThe strewn pieces of flesh\nResembling\nA crimson earth\nOf crushed Banyan fruits.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed Cheraman kanaikkaal Irumporai,\nthe Chera king who ruled o'er the Chera kingdom,\nfrom his capital town 'vanchi',\nThe white royal umbrella is unable to proceed\non account of the fetters, caused by the crowding warriors,\nSince its poles are getting torn off at the war;\nAnd it looks like a salver into which\nthe paste of red-cotton is poured.\n\n3.	In the battlefield where the king of the riverine plain killed the king of Vanchi, in the thick of the flight where warriors of unflinching valour crowding participated, the royal white umbrellas with their handles plucked away and filled with red flesh looked like vessels filled with red-cotton juice.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

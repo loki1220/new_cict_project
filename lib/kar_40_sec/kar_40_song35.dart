@@ -26,7 +26,7 @@ class _karSongThirtyfiveState extends State<karSongThirtyfive> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtyfiveState extends State<karSongThirtyfive> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "35.	செவ்வரைச் சென்னி யரிமானோ டவ்வரை\n    ஒல்கி யுருமிற் குடைந்தற்றான் - மல்கிக்\n    கரைகொண் றிழிதரூஉம் காவிரி நாடன்\n    உரைசா லுடம்பிடி மூழ்க வரசோ(டு)\n    அரசுவா வீழ்ந்த களத்து",
+                    "35.	சென்றநங் காதலர் சேணிகந்தா ரென்றெண்ணி\nஒன்றிய நோயோ டிடும்பை பலகூர\nவென்றி முரசி னிரங்கி யெழில்வானம்\nநின்று மிரங்கு மிவட்கு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 13,
+                      fontSize: 11,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "cevvaraic ceṉṉi yarimāṉō ṭavvarai\nolki yurumiṟ kuṭaintaṟṟāṉ - malkik\nkaraikoṇ ṟiḻitarūum kāviri nāṭaṉ\nuraicā luṭampiṭi mūḻka varacō(ṭu)\naracuvā vīḻnta kaḷattu",
+                    "ceṉṟanaṅ kātalar cēṇikantā reṉṟeṇṇi\noṉṟiya nōyō ṭiṭumpai palakūra\nveṉṟi muraci ṉiraṅki yeḻilvāṉam\nniṉṟu miraṅku mivaṭku.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	She pines at the thought\nThat her lord\nHas left her\nAnd gone to distant climes.\nShe grows thin and pale\nAnd suffers inwardly.\nPitying her lot,\nThe clouds that have risen —\nRumbling like drums\nVictorious —\nStand,\nAnd fall in showers.\n\n2.	This heroine has developed many afflictions\nstarting with the natural sallowness\nO'er her thoughts that her lover had\nto traverse a long distance\nunder orders of his Ruler to fight the enemy.\nSo, taking pity on her, the ascending clouds are roaring\nlike the triumph-drum and pouring down rain\n(Yes, our hero will definitely return now, on seeing the\nseason's arrival).\n\n3.	Since the lady love thinking that her lord had traversed long distances is plunged in grief, the colour of her body getting sallow, the massive clouds, like the murasu proclaiming victory, thunders from on high (thus foretelling the hero's return) and shows its sympathy for the lady.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf overflowing,\nBund-breaking Cauvery fought and slew,\nFelled with their kings\nThe armoured elephants as well\nBathed in a shower of spears,\nResembling\nMountains of red-rock\nAnd the lion in its peaky haunts\nBoth giving way to strokes\nOf lightning and thunder\nAnd sliding to the level ground.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri\nWhich is abound and flowing ruining the bunds,\nHas killed his enemies,\nThe state elephants of his enemy have fallen dead\nAlong with their kings, with the spears of victorious fame\nOf the Chola king piercing their bodies;\nIt looks as if the guileless mountain is getting trembled\nAnd falling along with lion on its peak,\nOn account of thunder.\n\n3.	The renowned javelins thrown by the king of the region of the bank-breaking Cauvery, piercing the royal elephants with the royal rides on the back collapsed on the ground. This looked like the red hills with the lions on them breaking to pieces at the fall of a thunderbolt.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

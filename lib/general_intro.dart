@@ -36,19 +36,20 @@ class _GeneralIntroState extends State<GeneralIntro> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 3300,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 25),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              padding: const EdgeInsets.symmetric(horizontal: 22.0, vertical: 0),
+              child: ListView(
                 children: [
                   Text("       From time immemorial man has been fascinated by stories and songs – the two ways of expressing one’s thought. Like every other nation, the nation of the Tamils was enamoured of songs and stories. The Tamils had a song for every occasion. They had a proverb to tell now and then which usually encapsulated a story or a legend. Since stories needed greater attention and better understanding, the Tamil folk resorted more to songs for they were aware that the music embedded in them would make their listeners rivet their attention to the song’s content. Perhaps that was the reason why there was a song for every celebration – marriage songs that sang highly of the union of the two souls, erotic songs that whispered of the union of the body, lullabies that lulled the child in the cradle into sleep, workers’ songs that lessened the monotony of their labour, songs of joy to enjoy their leisure, and finally mourning songs in praise of the dead.\n\n       To the poets all things on earth are grist to their ever grinding mill. Anything serious or funny inspires them and they are ready to burst with a song. What the storytellers did through their stories and legends, the poets did through their poems and songs. That is to say they not only entertained but also instructed. And this is what we call ‘Tamil Wisdom’.\n\n       Be it war or love, the two major themes in ancient Tamil Literature, the poets sang of them with equal ease and showed their calibre in many verse forms. The sculptures we come across in the ancient temples of the Tamils serve ample testimony to the fact that the Tamils were good at the battlefield.\n\n       The earliest available work in Tamil, Tolkāppiyam, throws light on the life of the Tamils in the Tamil country. And the ancient Tamils classified the subject (Poruḷ) of their literature under two general headings – Akam and Puṟam.\n\n       In fact, Poruḷ signifying the substance or the subject of any literary composition occupies a unique place in the Tamil language. The first of its two main aspects, Akam, meaning the internal or subjective, deals with psychology in all its aspects of love with footnotes on its varied emotions, incidents and accidents. To say that it depicts the relationship between lovers is no exaggeration, which may in many cases extend to their pillow talk. Puṟam is objective and deals with a plethora of aspects of human society primarily of war and the martial exploits of the people.\n\n       While it is true that most of the works that belong to the Caṅkam period made their stress either on love or on war, it is also true that these works made passing references to the ethical values of life. Some touch upon the rules or principles of behaviour. Yet, Tamil scholars unanimously agree that no work belonging to the Caṅkam period is completely devoted to ethics.\n\n       For the first time, in the whole gamut of Tamil Literature, one comes across works purposely written to show man the right path and put him on the right track. Such works are found in the purposefully read anthology, popularly known as Patiṉeṇkīḻkkaṇakku meaning Eighteen Minor classics. Pati-ṉeṇ-kīḻk kaṇakku is listed along with the other two anthologies, viz, ",
                   style: TextStyle(
                     color: Colors.black,
                   ),
                   ),
-
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text("1. Puṟam (War Poetry)",
                     style: TextStyle(
                       color: Colors.black,
@@ -59,6 +60,9 @@ class _GeneralIntroState extends State<GeneralIntro> {
                     style: TextStyle(
                       color: Colors.black,
                     ),),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text("2. Akam  (Love Poetry)",
                     style: TextStyle(
                         color: Colors.black,
@@ -69,6 +73,9 @@ class _GeneralIntroState extends State<GeneralIntro> {
                     style: TextStyle(
                       color: Colors.black,
                     ),),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text("3. Aṟam (Didactic Poetry)",
                     style: TextStyle(
                         color: Colors.black,
@@ -79,6 +86,9 @@ class _GeneralIntroState extends State<GeneralIntro> {
                     style: TextStyle(
                       color: Colors.black,
                     ),),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
+                  )
                 ],
               ),
             ),

@@ -16,7 +16,6 @@ class _karSongSevenState extends State<karSongSeven> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-
           leading: IconButton(
             onPressed: (){
               Navigator.pop(context);
@@ -26,7 +25,7 @@ class _karSongSevenState extends State<karSongSeven> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +40,39 @@ class _karSongSevenState extends State<karSongSeven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "1.	நாண்ஞாயி றுற்ற செருவிற்கு வீழ்ந்தவர்\n   வாண்மாய் குருதி களிறுழக்கத் - தாண்மாய்ந்து\n   முன்பசு லெல்லாங் குழம்பாகிப் பின்பகல்\n   துப்புத் துகளிற் கெழூஉம் புனனாடான்\n   தப்பியா ரட்ட களத்து.",
+                    "7.	நச்சியார்க் கீதலு நண்ணார்த் தெறுதலுந்\nதற்செய்வான் சென்றார்த் தரூஉந் தளரியலாய்\nபொச்சாப் பிலாத புகழ்வேள்வித் தீப்போல\nஎச்சாரு மின்னு மழை.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height:15,
+                  ),
                   Text(
-                    "nāṇñāyi ṟuṟṟa ceruviṟku vīḻntavar\nvāṇmāy kuruti kaḷiṟuḻakkat - tāṇmāyntu\nmuṉpacu lellāṅ kuḻampākip piṉpakal\ntupput tukaḷiṟ keḻūum puṉaṉāṭāṉ\ntappiyā raṭṭa kaḷattu.",
+                    "nacciyārk kītalu naṇṇārt teṟutalun\ntaṟceyvāṉ ceṉṟārt tarūun taḷariyalāy\npoccāp pilāta pukaḻvēḷvit tīppōla\neccāru miṉṉu maḻai.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the monarch of the land\nOf vitalizing waters\nSlaughtered his escaping foes,\nThe gushing gore\nFrom the gaping wounds opened with swords\nOf those\nWho thronged in the morn\nOnly to fall in the fight\nSlushed under the feet of elephants\nAll through the forenoon\nCoagulated into red crystalline dust\nAnd rose up to the sky\nIn the afternoon.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River\nCauviri, has killed his enemies,\nThe blood which was bleeding by pressing\nof the swords of the warriors\nwho having reached at sunrise,\nhad died at the Warfield,\nOn being stirred up by the male elephants with their feet\nhad turned like macerated slime during the forenoon;\nAnd in the afternoon, it looks like the particles\nof red-coral, spreading through out the sky.\n\n3.	The  Chozha king Senganan of the riverine plains  killed the erring enemies who had come to the field of battle in the morning; the war elephants ploughed with their feet the ground whereon gushed the blood from the sword  wounds of the bodies of the enemy army. The ground became blood-miry in the morning sun; and in the evening the soil-soaked blood now becoming dry and broken was blown by the wind into the sky like coral dust.",
+                    "1.	Dejected damsel;\nLook! On all sides\nThe rain-clouds lighten\nLike unto\nThe hoary sacrificial fires\nUnforgettingly observed.\nOur lord,\nGone abroad to bestow\nGood on those who befriend,\nAnd punish those who oppose,\nThus to confirm his fame,\nWill be brought back\nAnd given to us.\n\n2.	O, damsel so tender as a sprout, look at the sky\nwhere lightning is seen on all sides,\nLike the sacrificial fire of faultless celebrity! Yes,\nthis season would bring our hero back here,\nWho proceeded in pursuit of wealth, after deciding\nthat bestowing munificence to those who approach\nAnd destroying the foes who don't approach in friendship,\nwould make his position strong.\n\n3.	O lady with a tender heart! Our lord thinking that giving gifts to those who approach us asking for them, and wiping out these enemies who do not do so are acts that stand us in good stead went in search of wealth. Such a one the clouds lightning on all sides like the unforgettable renowned altar fire, will bring back.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

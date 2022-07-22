@@ -26,7 +26,7 @@ class _karSongThirtytwoState extends State<karSongThirtytwo> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtytwoState extends State<karSongThirtytwo> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "32.	மையின்மா மேனி நிலமென்னு நல்லவள் தீர்ந்த\n   செய்யது போர்த்தாள்போற் செவ்வந்தாள் - பொய்\n   பூந்தார் முரசிற் பொருபுன னீர்நாடன்\n   காய்ந்தாரை யட்ட களத்து.",
+                    "32.	கடாஅவுக பாகதேர் காரோடக் கண்டே\nகெடாஅப் புகழ்வேட்கைச் செல்வர் மனம்போற்\nபாடஅ மகிழ்வண்டு பாண்முரலுங் கானம்\nபிடாஅப் பெருந்தகை நற்கு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 13,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "maiyiṉmā mēṉi nilameṉṉu nallavaḷ tīrnta\nceyyatu pōrttāḷpōṟ cevvantāḷ - poy\npūntār muraciṟ porupuṉa ṉīrnāṭaṉ\nkāyntārai yaṭṭa kaḷattu.",
+                    "kaṭāavuka pākatēr kārōṭak kaṇṭē\nkeṭāap pukaḻvēṭkaic celvar maṉampōṟ\npāṭaa makiḻvaṇṭu pāṇmuraluṅ kāṉam\npiṭāap peruntakai naṟku.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	Charioteer!\nSpeed up the Chariot\nAfter the speeding clouds;\nThe bees in unimpeded joy,\nLike unto the happiness\nFilling the hearts of the wealthy\nWho work and will\nFor enduring fame,\nKeep humming their ditties\nTo Pitava blossoms,\nMagnificent in the forest.\n\n2.	Like the noble mind of the wealthy\nwho do only desire for undamaged fame,\nThe bees which are having undisturbed joy\nare humming gaily before the 'pidava' plant\nwhich is having majestic look in the forest;\nO, charioteer, look at the cloud which is running fast\nand impel please thy chariot with celerity\n(So that I can see my love-lorn lady without delay!).\n\n3.	Like the heart of the rich desirous of faultless fame, the beetles of unadulterated happiness hum their tune before the munificent Pidava Plant (bush); O charioteer! Looking at the fleeting clouds, speed up the chariot.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf copious rivers\nNever turning dry or proving false\nEmbattled the banks;\nWhere the king\nOf the garland of flowers\nAnd of victorious drums\nSlaughtered the jealous enemies,\nThe goodly earth\nOf blemishless beauty\nCovered in a blanket red\nTurned crimson herself.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom, who wears a garland\nOf fragrant flowers which don't wither,\nPossesses the Royal Drum of war, which is ever-beaten\nIn token of victory and who is having River Cauviri,\nWater of which does not dry up at all\nBut dashes against the shores,\nHas killed his furious enemies,\nLady Earth who has a spotless body\nOf fertile elegance\nHas tuned red in colour as if she put on a red garment,\nOn account of the blood\nFlowing out of warriors' fight.\n\n3.	In the field of war, the flower-garlanded king, possessing the drum of victory and lord of the region where the perennial waters of the Cauvery dash against the banks, killed his enemies. There Dame Earth of flawless beauty became red-hued as if she drew a red mantle over her body.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

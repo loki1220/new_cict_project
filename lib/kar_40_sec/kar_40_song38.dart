@@ -26,7 +26,7 @@ class _karSongThirtyeightState extends State<karSongThirtyeight> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtyeightState extends State<karSongThirtyeight> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "38.	பருமப் பணையெருத்திற் பல்யானை புண்கூர்ந்(து)\n    உருமெறி பாம்பிற் புரளுஞ் - செருமொய்ம்பிற்\n    பொன்னார மார்பிற் புனைசுழற்காற் செம்பியன்\n    துன்னாரை யட்ட களத்து",
+                    "38.	புகர்முகம் பூழிப் புரள வுயர்நிலைய\nவெஞ்சின் வேழம் பிடியோ டிசைந்தாடுந்\nதண்பதக் காலையும் வாரா ரெவன்கொலோ\nஒண்டொடி யூடு நிலை.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 13,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "parumap paṇaiyeruttiṟ palyāṉai puṇkūrn(tu)\nurumeṟi pāmpiṟ puraḷuñ - cerumoympiṟ\npoṉṉāra mārpiṟ puṉaicuḻaṟkāṟ cempiyaṉ\ntuṉṉārai yaṭṭa kaḷattu",
+                    "pukarmukam pūḻip puraḷa vuyarnilaiya\nveñciṉ vēḻam piṭiyō ṭicaintāṭun\ntaṇpatak kālaiyum vārā revaṉkolō\noṇṭoṭi yūṭu nilai.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	The tall elephant\nOf lasting anger\nWith his cow embraced\nRolls on mud,\nHis spotted front\nAll besmeared.\nEven in this season,\nInviting and cool,\nThe lord has not cared to return.\nOh, Lady of shinning ornaments!\nOf what avail,\nThis, your anger in dejection?\n\n2.	The high-ranking rutting elephants\nwith their spotted face welting in the dust\nAre joining with the female ones\nand playing in the cool freshet;\nThis is the time promised by our hero,\nbut he has not yet returned,\neven after the starting of winter;\nO, my lady adorned with shining bracelets,\nof what avail, shouldst at thou resort to sulk?\n(Please bear with this, he will soon return!)\n\n3.	Even at the cool and opportune hour when the mighty furious male-elephants play with the female elephants, with their pock-marked faces wallowing in the sand (mud), our lord has failed to return; so, O lady wearing lustrous bracelets! Of what avail is thy going into sulks?",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    " 1.	In the field of battle\nWhere Sen Kan Chozhan\nOf war renown\nAnd a valiant chest\nBejewelled in gold,\nAnd of ring-adorned ankles,\nSlew his enemies,\nThe bull-necked\nElephants huge,\nSeveral of them\nSorely wounded\nRolled on the ground\nLike pythons\nCaught in a stroke\nOf lightning and thunder.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom\nWho is renowned for his prowess at war,\nHaving a wide breast, wearing gold necklace over it\nAnd having his ankles with anklets strung around them,\nHas killed his enemies,\nA number of elephants which have cushions\nOn their necks and have large-naped necks,\nAre tumbling over an account\nOf the excessive wounds inflicted\nOn them by his armed forces,\nLike the snakes which are scared away,\nBy the noise of thunder.\n\n3.	In the battlefield where the Chozha king of valour wearing gold chains on his bosom and anklets of valour on his legs killed his enemies, many decorated big elephants deeply wounded rolled on the ground and wriggled like (huge) snakes struck down by a thunderbolt.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

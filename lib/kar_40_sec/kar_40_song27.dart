@@ -26,7 +26,7 @@ class _karSongTwentysevenState extends State<karSongTwentyseven> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongTwentysevenState extends State<karSongTwentyseven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "27.	செஞ்சேற்றுட் செல்யானை சீறி மிதித்தலால்\n     ஒண்செங் குருதிகள் தொக்கீண்டி நின்றவை\n     பூநீர் வியன்றமிடாப் போன்ற புனனாடன்\n     மேவாரை யட்ட களத்து.",
+                    "27.	முருகியம்போல் வான முழங்கி யிரங்கக்\nகுருகிலை பூத்தன கானம் பிரிவெண்ணி\nஉள்ளா தகன்றாரென் றூடியாம் பாராட்டப்\nபள்ளியுட் பாயும் பசப்பு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 14,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "ceñcēṟṟuṭ celyāṉai cīṟi mitittalāl\noṇceṅ kurutikaḷ tokkīṇṭi niṉṟavai\npūnīr viyaṉṟamiṭāp pōṉṟa puṉaṉāṭaṉ\nmēvārai yaṭṭa kaḷattu.",
+                    "murukiyampōl vāṉa muḻaṅki yiraṅkak\nkurukilai pūttaṉa kāṉam piriveṇṇi\nuḷḷā takaṉṟāreṉ ṟūṭiyām pārāṭṭap\npaḷḷiyuṭ pāyum pacappu.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	The clouds\nRattle like the tabors\nOf forests and tribesmen.\nThe Kurukathi tendrils\nHave unfurled into leaves\nAll along the forest.\nIf we continue to cherish\nOur anger and sorrow\nAt our lord\nThat he had left us\nWithout considering\nThe suffering it causes,\nThen\nThis paly sickness\nWill sleep through the sheets.\n\n2.	The clouds are roaring like the sound\nraised by the beat of drum by mountaineers;\nAnd the leaves of 'kurukkathi'*\nhave bloomed throughout the forest;\nShould thou resort to sulks assuming that our hero had\nproceeded as if separation is better\nWithout considering thy distress, only the sallowness\nwould swell and make thee lie on bed.\n\n3.	The clouds thundering like the beating of the Kurinchi drums, the leaves of the Karukathi trees have opened out; if we indulge excessively in sulks thinking that our lord deemed it beneficial to go away from us (in search of wealth) without bestowing any thought on our sad plight at his separation, then, verily, sallowness will creep into our bed (confine us to bed).",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf copious waters\nSlew the advancing foes,\nThe rushing elephants\nInfuriated\nTrampled under their feet\nThe mire of blood;\nAnd in the holes\nCollected\nPools of shining scarlet blood\nResembling\nA water tank of flaming flowers.\n\n2.	At the battle-field, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed his enemies,\nThe shining and reddish blood is getting collected\nAt the cavities created\nBy the treading of the infuriated elephants\nWhich are walking in the mud mired by bloodshed;\nIt looks like a water pot which is\nReplete with reddish flowers.\n\n3.	In the battlefield when the king Senganan of the riverine plains killed his foes, the passing elephants violently treading the  blood-miry ground, blood collected in pools, in the footprints and the blood so collected in the pits resembled red flowers in large wide vessels.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

@@ -41,27 +41,34 @@ class _innaSongThirtysixState extends State<innaSongThirtysix> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
-
                   Text("35. எழிலி யுறைநீங்கி னீண்டையார்க் கின்னா\n     குழலி னினியமரத் தோசைநன் கின்னா\n     குழவிக ளுற்ற பிணியின்னா வின்னா\n     அழகுடையான் பேதை யெனல்.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 13,
                     ),),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text("eḻili yuṟainīṅki ṉīṇṭaiyārk kiṉṉā\nkuḻali ṉiṉiyamarat tōcainaṉ kiṉṉā\nkuḻavika ḷuṟṟa piṇiyiṉṉā viṉṉā\naḻakuṭaiyāṉ pētai yeṉal.",
                     style: TextStyle(
                       color: Colors.black,
                     ),),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text("1.	Miserable for the people of this world if clouds do not rain.\nMiserable for the trees if they make sweet flute-like notes.\nMiserable the children stricken with disease.\nAnd miserable,\nFor a handsome one to be called a fool.\n\n2.	It would cause misery to this universe, should the cloud\nnot shower down drops of rain;\nThough giving forth the sound like that of a flute,\nthe sound raised by the wind passing thro' trees,\nwould cause misery;\nAny disease being suffered by the infants,\nwould cause misery;\nAnd telling that one who is handsome is a dolt,\nwould cause misery.\n\n3.	If the clouds fail to send down showers it is grievous for people of this world; the lute-like music emanating from a tree makes one languish deeply; children's affliction by disease is painful; for a young man of beauty to be termed a stupid person is distressing.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

@@ -26,7 +26,7 @@ class _karSongThirteenState extends State<karSongThirteen> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongThirteenState extends State<karSongThirteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "13.	நிரைகதிர் நீளெஃக நீட்டி வயவர்\n    வரைபுரை யானைக்கை நூற - வரைமேல்\n    உருமெறி பாம்பிற் புரளுஞ் செருமொய்ம்பிற்\n    செஎய்பொரு தட்ட களத்து",
+                    "13.	ஏந்தெழி லல்குலா யேமார்ந்த காதலர்\nகூந்தல வனப்பிற் பெயறாழ வேந்தர்\nகளிறெறி வாளரவம் போலக்கண் வெளவி\nஒளிறுபு மின்னு மழை.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "niraikatir nīḷeḵka nīṭṭi vayavar\nvaraipurai yāṉaikkai nūṟa - varaimēl\nurumeṟi pāmpiṟ puraḷuñ cerumoympiṟ\nceeyporu taṭṭa kaḷattu",
+                    "ēnteḻi lalkulā yēmārnta kātalar\nkūntala vaṉappiṟ peyaṟāḻa vēntar\nkaḷiṟeṟi vāḷaravam pōlakkaṇ veḷavi\noḷiṟupu miṉṉu maḻai.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere Sen Kan Chozhan\nOf battle-strong\nFought against and vanquished his foes, \nWarriors\nLifting up their long sparkling swords\nWell behind\nTheir heads and shoulders\nChopped off\nThe trunks of elephants\nResembling hillocks\nAnd the severed trunks\nRolled on the ground\nLike pythons hit\nBy a stroke of lightning.\n\n2.	In the battle-field, where Chengatcholan the red-eyed\nKing of the Chola Kingdom\nWho is renowned for his prowess at war-field, \nHas killed his enemies, \nHis warriors had drawn out their long swords\nOf swarming radiance and cut down the trunks\nOf mountain-like elephants;\nAnd the trunks so butchered are rolling over\nLike the thunder-struck snakes\nOf the mountain.\n\n3.	In the field of battle where the redoubtable warrior king fought and killed his enemies, warriors holding aloft their long scintillating swords cut down the mountainous elephants' trunks which dropping on the ground writhed like huge snakes on the mountain struck down by a thunderbolt.",
+                    "1.	Damsel callipygian!\nLike unto the tresses of women\nLoosened and beautiful\nIn love-bout with their beloved ones,\nThe rain-clouds\nLower and fall.\nLike unto the sheen\nOf swords for kings\nTo encounter elephants,\nThe lightning flashes ––\nDazzling the eyes ––\nAnd it rains.\n\n2.	O, my lady having the holding-waist of surpassing beauty,\nthe rain is falling like the sliding tresses of\nwomen who have enjoyed\nthe company of their heroes;\nAnd the cloud is stealing the eyes and is flashing\nemitting the lightning like the sound of the sword\nWhich cuts the king's elephant\nand causes it to fall.\n(Yes, our hero will arrive now!)\n\n3.	O lovely-waisted lady! To pour down rain like the lovely flowing tresses of women after their engagement with their lord, resounding like the swords of thugs that cut down the elephants and flashes with lightning blinding the eyes (So be sure that our lord will return home now).",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

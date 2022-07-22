@@ -26,7 +26,7 @@ class _karSongTwentythreeState extends State<karSongTwentythree> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongTwentythreeState extends State<karSongTwentythree> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "23.	ஏற்றி வயவ ரெறிய நுதல்பிளந்து\n     நெய்த்தோர்ப் புனலு ணிவந்தகளிற் றுடம்பு\n     செக்கர்கொள் வானிற் கருங்கொண்மூப் போன்றவே\n     கொற்றவேற் றானைக் கொடித்திண்டோ ர்ச் செம்பியன்\n     செற்றாரை யட்ட களத்து",
+                    "23.	கண்டிரண் முத்தங் கடுப்பப் புறவெல்லாந்\nதண்டுளி யாலி புரளப் புயல்கான்று\nகொண்டெழில் வானமுங் கொண்டன் றெவன் கொலோ\nஒண்டொடி யூடுநிலை.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 10,
+                      fontSize: 11,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "ēṟṟi vayava reṟiya nutalpiḷantu\nneyttōrp puṉalu ṇivantakaḷiṟ ṟuṭampu\ncekkarkoḷ vāṉiṟ karuṅkoṇmūp pōṉṟavē\nkoṟṟavēṟ ṟāṉaik koṭittiṇṭō rc cempiyaṉ\nceṟṟārai yaṭṭa kaḷattu",
+                    "kaṇṭiraṇ muttaṅ kaṭuppap puṟavellān\ntaṇṭuḷi yāli puraḷap puyalkāṉṟu\nkoṇṭeḻil vāṉamuṅ koṇṭaṉ ṟevaṉ kolō\noṇṭoṭi yūṭunilai.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the battlefield\nWhere Sen Kan Chozhan\nOf an army of victorious spears,\nAnd of chariots\nStrongly built and flagged,\nSlew his opposing foes,\nThe dead carcasses of elephants\nOn which the warriors tumbled\nTheir foreheads blown\nAnd sunk in the fury and mire\nOf blood\nResembled\nBlack clouds in a scarlet sky.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom\nWho possesses a victorious force of spearmen\nAnd a strong chariot which has a tremulous standard,\nHas killed his enemies,\nThe bodies of the elephants over which the blood is flowing\nOn account of breaking of their foreheads\nBy throwing of arms by the warriors,\nLook like the black clouds on the red-sky.\n\n3.	In the battlefield where the Chozha king Senganan, the owner of a victorious spear-borne army and a flagged strong chariot, killed his enemies, the bodies of elephants whose foreheads were split by weapons of war aimed against them by warriors dipping and floating in the pool of blood, looked like black clouds in a red-hued sky.",
+                    "1.	Damsel\nDecked with bangles brilliant!\nAll along the forest\nLike unto scattered pearls\nThe chilled water-drops,\nLittle icicles –\nRoll.\nThe clouds,\nDrizzling rain,\nHave spread\nAll over the sky-space.\nWherefore, then, this playful anger?\n\n2.	O, my damsel adorned with shining bracelets,\njust behold there!\nThe cloud is covering the entire space of the sky\nby its rain-fall,\nAnd the cold water-drops which look like pearls\nare getting collected at the spot;\nAnd the hailstones are rolling o'er throughout the forest;\nyes it's the promised time of our hero's return;\nWhy thou art in huffish mood, out of thy sulks!\n\n3.	O lady wearing lustrous bangles! Cool drops of water and hailstones like well developed pearls roll over in the entire forest; the clouds raining encompass the lovely sky in full; so where is the need to go into sulks?",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/7,
                   ),
                 ],
               ),

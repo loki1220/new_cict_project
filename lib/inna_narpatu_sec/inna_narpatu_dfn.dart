@@ -59,7 +59,6 @@ class _Inna_Narpatu_poemsState extends State<Inna_Narpatu_poems> {
       child: Material(
         borderRadius: BorderRadius.circular(18),
         child: Container(
-          // color: Colors.yellow,
           width: 3 * MediaQuery.of(context).size.width / 3,
           height: 90,
           // color: Color(0xFFF9C29A),

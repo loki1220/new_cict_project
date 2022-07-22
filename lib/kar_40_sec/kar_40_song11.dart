@@ -26,7 +26,7 @@ class _karSongElevenState extends State<karSongEleven> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,39 @@ class _karSongElevenState extends State<karSongEleven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height:   950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "11.	கழுமிய ஞாட்பினுண் மைந்திகந்தா ரிட்ட\n    ஒழிமுரச மொண்குருதி யாடித் - தொழின்மடிந்து\n    கண்காணா யானை யுதைப்ப விழுமென\n    மங்குன் மழையி னிதிரு மதிராப்போர்ச்\n    செங்கண்மா லட்ட களத்து.",
+                    "11.	புணர்தரு செல்வந் தருபாக்குச் சென்றார்\nவணரொலி யைம்பாலாய் வல்வருதல் கூறும்\nஅணர்த்தெழு பாம்பின் றலைபோற் புணர்கோடல்\nபூங்குலை யீன்ற புறவு.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "kaḻumiya ñāṭpiṉuṇ maintikantā riṭṭa\noḻimuraca moṇkuruti yāṭit - toḻiṉmaṭintu\nkaṇkāṇā yāṉai yutaippa viḻumeṉa\nmaṅkuṉ maḻaiyi ṉitiru matirāppōrc\nceṅkaṇmā laṭṭa kaḷattu.",
+                    "puṇartaru celvan tarupākkuc ceṉṟār\nvaṇaroli yaimpālāy valvarutal kūṟum\naṇartteḻu pāmpiṉ ṟalaipōṟ puṇarkōṭal\npūṅkulai yīṉṟa puṟavu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere Sen Kan Chozhan\nUnperturbed in war\nSlaughtered his foes,\nLosing their might\nIn the jostling fight\nMen let fall\nThe drums of war\nWhich\nHalf-sunk in the luminous gore\nLost their native resound\nAnd mumbled\nLike rain-laden clouds\nWhen elephants eyeless tumbled against them.\n\n2.	In the battle-field, where Chengatcholan the red-eyed\nKing of the Chola Kingdom\nWho never gets startled in waging wars,\nhas killed his enemies,\nThe war drums left behind by the warriors\nwho lost their strength,\nHaving got immersed in abundant blood,\nAre kicked by the elephants, which after having lost their eyes\nOn account of the wounds inflicted by the forces,\nHave left their warfare action;\nAnd they (the war-drums) are thus resounding as thunder,\nby such kicking.\n\n3.	In the field of battle where the unfaltering fighter Senganmal killed his foes, the war drums relinquished in the thick of the fight (and ceased to be beaten) by weakened (wounded) soldiers dipping in the shining blood and ceasing to be of service as of old, now killed by blinded elephants mumbled.",
+                    "1.	Damsel of curled tresses\nOf hair done in five different ways!\nLike unto a Cobra's lifted hood\nThe white attractive Kanthal\nHas blossomed in the forest,\nFlowers in bunches.\nThey tell us\nThat our lord,\nGone abroad\nTo secure well-won wealth\nWill be back,\nEven now.\n\n2.	O, my lady having luxuriant tresses dressed in five modes,\nlook at the forest\nWhich has brought forth the crowded white species\nof the Gloria flower, which look like the hood of a cobra;\nIt does tell us about the speedy return of our hero\nWho proceeded far away,\nTo bring the required wealth for the enjoyments\nOf the parents and future life.\n\n3.	O lady with luxurious tresses made into knots! The forests where the white gloriosa superba, like the lifting hooded head of the cobra, blooms in clusters foretell the speedy return home of our lord who went with a view to earning wealth so very necessary for life on earth and after.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

@@ -26,7 +26,7 @@ class _karSongTwentysixState extends State<karSongTwentysix> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongTwentysixState extends State<karSongTwentysix> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 980,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "26.	எவ்வாயு மோடி வயவர் துணித்திட்ட\n    கைவாயிற் கொண்டெழுந்த செஞ்செவிப் புன்சேவல்\n    ஐவாய் வயநாகங் கவ்வி விசும்பிவருஞ்\n    செவ்வா யுவணத்திற் றோன்றும் புனனாடன்\n    தெவ்வாரை யட்ட களத்து",
+                    "26.	நலமிகு கார்த்திகை நாட்டவ ரிட்ட\nதலைநாள் விளக்கிற் றகையுடைய வாகிப்\nபுலமெலாம் பூத்தன தோன்றி சிலமொழி\nதூதொடு வந்த மழை.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 14,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "evvāyu mōṭi vayavar tuṇittiṭṭa\nkaivāyiṟ koṇṭeḻunta ceñcevip puṉcēval\naivāy vayanākaṅ kavvi vicumpivaruñ\ncevvā yuvaṇattiṟ ṟōṉṟum puṉaṉāṭaṉ\ntevvārai yaṭṭa kaḷattu",
+                    "nalamiku kārttikai nāṭṭava riṭṭa\ntalaināḷ viḷakkiṟ ṟakaiyuṭaiya vākip\npulamelām pūttaṉa tōṉṟi cilamoḻi\ntūtoṭu vanta maḻai.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	Lady of sparse words sweet;\nThe thonri flowers,\nLike unto the lamps\nLit on the first day\nOf auspicious Karthigai month\nBy every citizen,\nHave blossomed\nBeautifully\nAll over the place.\nThe rains\nHave also accompanied\nAs harbingers.\n\n2.	O, damsel having soft speech, the glory lily* flowers have\ngot the elegance of the first day lamp\nWhich is lighted serially by the natives to mark the beginning\nof prosperous 'Kaarthigai' festival\n(of the land of Tamils)\nAnd have bloomed throughout the tract\nand the rain has come with the errand;\nSo, O, my lady, please bear for a while\n(He will definitely return now).\n\n3.	O lady of few words! Lovely like the lamps lit by the people on the first day of the greatly welcome karthigai festival; the thondri blooms have blossomed everywhere; the rains have come as envoy (from our lord)!",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nSlaughtered his repugnant enemies\nRushing everywhere\nWarriors\nHacked and struck,\nAnd the red-eared male kite\nSnatching in its beak\nA hewn hand dismembered,\nWinged aloft\nResembling\nThe Brahmin-kite\nWhirling in the sky\nSnatching a five-headed serpent\nIn its claws and beak.\n\n2.	In the battle-field, where Changatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed his enemies,\nThe tawny kites which are having reddish ears,\nAre seizing by their mouths\nThe hands slain by the warriors\nWho are running here and there,\nAre raising on high;\nThey look as if the white-headed kites which are having\nReddish mouths and are flying high in the sky,\nAre seizing the mighty\nFive-mouthed snakes.\n\n3.	In the field of war where the king Senganan of the riverine plains killed his enemies the red-eared male kites rose in the air holding in their mouths enemy warriors' hands, which, the Chozha soldiers rushing in on all sides cut down; the scene resembled a red-mouthed brahmin kite flying in the sky holding the mighty five-mouthed snake in its mouth.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

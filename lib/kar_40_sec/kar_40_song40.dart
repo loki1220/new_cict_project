@@ -26,7 +26,7 @@ class _karSongFortyState extends State<karSongForty> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongFortyState extends State<karSongForty> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "40.	வெள்ளிவெண் ணாஞ்சிலான் ஞால முழுவனபோல்\n    எல்லாக் களிறு நிலஞ்சேர்ந்த - பல்வேற்\n    பணைமுழங்கு போர்த்தானைடச் செங்கட் சினமால்\n    கணைமாரி பெய்த களத்து",
+                    "40.	வந்தன செய்குறி வாரா ரவரென்று\nநொந்த வொருத்திக்கு நோய்தீர் மருந்தாகி\nஇந்தின் கருவண்ணங் கொண்டன் றெழில்வானம்\nநந்துமென் பேதை நுதல்.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
+                      fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "veḷḷiveṇ ṇāñcilāṉ ñāla muḻuvaṉapōl\nellāk kaḷiṟu nilañcērnta - palvēṟ\npaṇaimuḻaṅku pōrttāṉaiṭac ceṅkaṭ ciṉamāl\nkaṇaimāri peyta kaḷattu",
+                    "vantaṉa ceykuṟi vārā ravareṉṟu\nnonta voruttikku nōytīr maruntāki\nintiṉ karuvaṇṇaṅ koṇṭaṉ ṟeḻilvāṉam\nnantumeṉ pētai nutal.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	'The given signs\nave come.\nut the lord –\ne hasn't come'\no one pining thus,\nuffering inwardly,\ns a medicine\no cure her dejection,\nhe beauteous skies\nave turned\nlack -\ns the fruits of Eechai palm.\nhe forehead\nn the fond maiden\nevives still, \ns before.\n\n2.	O, my grumbling lady, thou hast suffered\nhat our hero has not yet returned, \nespite the appearance of signs indicated by him;\now, behold the teeming cloud!\nt's getting the black colour\nike that of the dwarf wild date palm\nnd it has come as a cure-drug for thy suffering;\nhy forehead would also get its radiance back\nOur hero would now return, since the season has arrived)!\n\n3.	O tender-hearted lady! The day and hour fixed by our lord for his return to us have arrived; you have been grieving at the fact that he returns not as a cure for such a malady the lovely clouds have become dark in colour like the eechai fruits; your forehead will henceforth brighten up.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere Sen kan Chozhan\nOf implacable rage,\nAnd of an army\nOf long-resounding battle drums,\nShot a shower of arrows,\nIt appeared\nAs if\nThe elephants all\nTethered to silver shares shining\nPloughed the entire field.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom who has a pile of spears\nAnd a fighting army, along with the royal drum\nWhich makes loud sound,\nHas thrown his arrows like rain-fall\nOn his enemies,\nAll the elephants which have long trunks are stooping\nOut of shame, towards the earth;\nAnd it looks as if they are ploughing the land\nWith the ploughs made of silver.\n\n3.	In the battlefield where the furious Chozha king Senganan possessed spears galore and an army with the drum of victory showered arrows, the male elephants with their tusks ploughing up the land collapsed on the ground. This looked like the ploughing of the land with white silver ploughs.",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

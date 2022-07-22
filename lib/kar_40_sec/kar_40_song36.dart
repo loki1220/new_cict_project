@@ -26,7 +26,7 @@ class _karSongThirtysixState extends State<karSongThirtysix> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtysixState extends State<karSongThirtysix> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 970,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "36.	ஓஓ உவம னுறழ்வின்றி யொத்ததே\n    காவிரி நாடன் கழுமலங் கொண்டநாள்\n    மாவுதைப்ப மாற்றார் குடையெலாங் கீழ்மேலா\n    ஆவுதை காளாம்பி போன்ற புனனாடன்\n    மேவாரை யட்ட களத்து",
+                    "36.	சிரல்வாய் வனப்பின வாகி நிரலொப்ப\nஈர்ந்தண் தளவந் தகைந்தன  சீர்த்தக்க\nசெல்வ மழைமதர்க்கட் சின்மொழிப் பேதையூர்\nநல்விருந் தாக நமக்கு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 13,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "ōō uvama ṉuṟaḻviṉṟi yottatē\nkāviri nāṭaṉ kaḻumalaṅ koṇṭanāḷ\nmāvutaippa māṟṟār kuṭaiyelāṅ kīḻmēlā\nāvutai kāḷāmpi pōṉṟa puṉaṉāṭaṉ\nmēvārai yaṭṭa kaḷattu",
+                    "ciralvāy vaṉappiṉa vāki niraloppa\nīrntaṇ taḷavan takaintaṉa  cīrttakka\ncelva maḻaimatarkkaṭ ciṉmoḻip pētaiyūr\nnalvirun tāka namakku.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	The wet and cool\nAlava blossoms\nLooking red\nLike the beak\nOf a kingfisher\nGlow beauteously\nRow after row.\nThe home town\nOf our fond beloved\nOf few words\nAnd of cool wholesome eyes\nRich like rain\nShall be our destination.\n\n2.	The chilly golden jasmines are budding \nin captivating an array by each\nresembling the beauty of kingfisher's beak;\nOh, it's time to reach the town of my wealthy lady,\nWho speaks not much but is pining for my arrival,\nwith rain-like tearful lascivious eyes;\nA superb feast would be awaiting there, \nyes, I mean both my beloved and her delicacies!\n(yes, my charioteer, drive fast please.)\n\n3.	The greatly cool red jasmines like the beak of the halcyon bird, getting lovely have budded in rows; so let the greatly prosperous village of the lady love of sparing words with dignified eyes, cool like the rains become the place where we are to be given a grand feast.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the monarch of the land\nOf copious waters\nSlaughtered his advancing foes,\nOn that fateful day\nWhen the lord of the land of Cauvery\nCaptured kazhumalam\nThe umbrellas of rivaling kings\nTrampled by horses\nWere strewn upside down\nLike the mushroom\nUpturned under the feet\nOf pasturing kine.\nOh! Oh! How very similar\nWas the spectacle!\n\n2.	At the battlefield, where Changatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed his enemies,\nOn the day of his capture of Kazhumalam town of the\nChera kingdom,\nThe royal umbrellas of his enemies are getting turned\nUpside down on account of kicking by his horses,\nAnd they look like the mushrooms being kicked\nBy the herd of cows;\nYes, the simile has become very apt and consistent\nWithout any contrast.\n\n3.	On the day when the king of the Cauvery region (the Chozha king) annexed the place called Kazhumalam, killing his enemies in the field of battle, the (royal) umbrellas of his enemies that had been kicked up by the (war) horses topsy-turvy looked like the mushrooms kicked up by the (grazing) cows. O, this comparison without flaw suits the scene!",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

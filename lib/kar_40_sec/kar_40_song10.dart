@@ -12,11 +12,9 @@ class _karSongTenState extends State<karSongTen> {
   Widget build(BuildContext context) {
 
 
-
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-
           leading: IconButton(
             onPressed: (){
               Navigator.pop(context);
@@ -26,7 +24,7 @@ class _karSongTenState extends State<karSongTen> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +39,39 @@ class _karSongTenState extends State<karSongTen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "1.	நாண்ஞாயி றுற்ற செருவிற்கு வீழ்ந்தவர்\n   வாண்மாய் குருதி களிறுழக்கத் - தாண்மாய்ந்து\n   முன்பசு லெல்லாங் குழம்பாகிப் பின்பகல்\n   துப்புத் துகளிற் கெழூஉம் புனனாடான்\n   தப்பியா ரட்ட களத்து.",
+                    "10.	வானேறு வானத் துரற வயமுரண்\nஆனேற் றொருத்த லதனோ டெதிர்செறுப்பக்\nகான்யாற் றொலியிற் கடுமான்றே ரென்றோழி\nமேனி தளிர்ப்ப வரும்.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "nāṇñāyi ṟuṟṟa ceruviṟku vīḻntavar\nvāṇmāy kuruti kaḷiṟuḻakkat - tāṇmāyntu\nmuṉpacu lellāṅ kuḻampākip piṉpakal\ntupput tukaḷiṟ keḻūum puṉaṉāṭāṉ\ntappiyā raṭṭa kaḷattu.",
+                    "vāṉēṟu vāṉat turaṟa vayamuraṇ\nāṉēṟ ṟorutta lataṉō ṭetirceṟuppak\nkāṉyāṟ ṟoliyiṟ kaṭumāṉṟē reṉṟōḻi\nmēṉi taḷirppa varum.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "1.	In the field of battle\nWhere the monarch of the land\nOf vitalizing waters\nSlaughtered his escaping foes,\nThe gushing gore\nFrom the gaping wounds opened with swords\nOf those\nWho thronged in the morn\nOnly to fall in the fight\nSlushed under the feet of elephants\nAll through the forenoon\nCoagulated into red crystalline dust\nAnd rose up to the sky\nIn the afternoon.\n\n2.	At the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River\nCauviri, has killed his enemies,\nThe blood which was bleeding by pressing\nof the swords of the warriors\nwho having reached at sunrise,\nhad died at the Warfield,\nOn being stirred up by the male elephants with their feet\nhad turned like macerated slime during the forenoon;\nAnd in the afternoon, it looks like the particles\nof red-coral, spreading through out the sky.\n\n3.	The  Chozha king Senganan of the riverine plains  killed the erring enemies who had come to the field of battle in the morning; the war elephants ploughed with their feet the ground whereon gushed the blood from the sword  wounds of the bodies of the enemy army. The ground became blood-miry in the morning sun; and in the evening the soil-soaked blood now becoming dry and broken was blown by the wind into the sky like coral dust.",
+                    "1.	My bosom friend!\nAs the sky-spread clouds\nRattle and thunder\nThe strong contending buck\nIs startled,\nAnd runs against\nThe imagined rival.\nThe chariot of our lord\nDrawn by horses swift\nHurtles along like forest streams\nMaking your beautiful mien\nSpring to life again.\n\n2.	O, my lady, the thunder-bolt raises thunder at the cloud\nAnd the mighty and valiant he-buffalo is getting\nfurious and roaring against the thunderbolt;\nThe fast-moving horse-attached chariot of our hero\nis arriving fast raising the sound like that of a river flowing in sylvan tract, so that thy body may regain its wanting charm.\n\n3.	My mistress! Peals of thunder rolling from the clouds and the mighty furious ox bellowing in wrath in return, our lord's chariot drawn by fleet-footed horses, making noise like a jungle stream is coming, making thy body attractive (with joy).",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

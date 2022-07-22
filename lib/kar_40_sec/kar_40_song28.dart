@@ -26,7 +26,7 @@ class _karSongTwentyeightState extends State<karSongTwentyeight> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongTwentyeightState extends State<karSongTwentyeight> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 1050,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "28.	ஓடா மறவ ருருத்து மதஞ்செருக்கிப்\n    பீடுடை வாளார் பிறங்கிய ஞாட்பினுட்\n    கேடகத்தோ டற்ற தடக்கைகொண் டோ டி\n    இகலன்வாய்த் துற்றிய& தோற்ற மயலார்க்குக்\n    கண்ணாடி காண்பாரிற் றோன்றும் புனனாடன்\n    நண்ணாரை யட்ட களத்து.",
+                    "28.	இமிழிசை வானம் முழங்கக் குமிழின்பூப்\nபொன்செய் குழையிற் றுணர் தூங்கத் தண்பதஞ்\nசெவ்வி யுடைய சுரநெஞ்சே காதலியூர்\nகவ்வை யழுங்கச் செலற்கு.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "ōṭā maṟava ruruttu matañcerukkip\npīṭuṭai vāḷār piṟaṅkiya ñāṭpiṉuṭ\nkēṭakattō ṭaṟṟa taṭakkaikoṇ ṭō ṭi\nikalaṉvāyt tuṟṟiya& tōṟṟa mayalārkkuk\nkaṇṇāṭi kāṇpāriṟ ṟōṉṟum puṉaṉāṭaṉ\nnaṇṇārai yaṭṭa kaḷattu.",
+                    "imiḻicai vāṉam muḻaṅkak kumiḻiṉpūp\npoṉcey kuḻaiyiṟ ṟuṇar tūṅkat taṇpatañ\ncevvi yuṭaiya curaneñcē kātaliyūr\nkavvai yaḻuṅkac celaṟku.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	Resounding clouds\nClap musical tunes.\nThe Kumizh blossoms\nLike unto golden ear-ornaments\nHang in bunches.\nMy heart!\nCool are the forests,\nPropitious and inviting.\nIt's time for us to return\nTo the hearth of our beloved\nHealing her suffering loneliness.\n\n2.	The roaring sound of the clouds is resounding\nand the flowers of 'Kumizh' are hanging in cluster\nlike the ear-jewels made of gold;\nO, my heart, these forests are witnessing chill weather\nand are wearing a graceful look\nTo enable us start returning to the town of my beloved\nand our return would put an end to the unwarranted\nrumour and idle talk in the town.\n\n3.	O heart! The sweet-turned clouds rumbling, the Kumizh blooms, blowing in hanging clusters like golden tresses, the forest paths with a view to facilitate our passage home to put an end to scandal in the heroine's village, have become cool and pleasant.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nSlew the unfriendly foes,\nWarriors who never ran away from the field\nFrowned big in pride and valour fought,\nTheir swords of glory\nHeld aloft;\nAnd the long hands\nStill clutching the shield\nRolled on the ground.\nThe night-prowlers\nWith these limbs in their fearful jaws\nLooked at strangers\nThrough their rolling eyes\nResembling beads of glass.\n\n2.	In the battle-field, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by river Cauviri,\nHas killed his enemies,\nThe scene of jackals seizing by their mouth\nAnd running away with the large hands of warriors\nWhich have fallen, being cut off along with buckler,\nAt the said battlefield,\nWhere those warriors who never showed their back in defeat\nAnd who are carrying swords of victorious greatness\nAre fighting vigorously and getting exhilarated pride,\nDoes appear to those who stand nearby \nas those who see themselves in the mirror.\n\n3.	In the field of war where the king Senganan of the riverine plains killed his enemies, the unfleeing warriors furiously and with gusto fought holding in their hands their renowned swords. In such a battle, the jackals ran away holding in their mouths the enemy soldier's hand with the shield therein cut down. For the onlookers it looked as if people were looking at mirrors!",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

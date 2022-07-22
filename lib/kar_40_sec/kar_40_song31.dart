@@ -26,7 +26,7 @@ class _karSongThirtyoneState extends State<karSongThirtyone> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongThirtyoneState extends State<karSongThirtyone> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "31.	ஓடா மறவ ரெறிய நுதல்பிளந்த\n    கோடேந்து கொல்களிற்றுக் கும்பத் தெழிலோடை\n    மின்னுக் கொடியின் மிளிரும் புனனாடன்\n    ஒன்னாரை யட்ட களத்து",
+                    "31.	கார்ச்சே ணிகந்த கரைமருங்கி னீர்ச்சேர்ந்\nதெருமை யெழிலே றெறிபவர் சூடிச்\nசெருமிகு மள்ளரிற் செம்மாக்குஞ் செவ்வி\nதிருநுதற் கியாஞ்செய் குறி.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 13,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "ōṭā maṟava reṟiya nutalpiḷanta\nkōṭēntu kolkaḷiṟṟuk kumpat teḻilōṭai\nmiṉṉuk koṭiyiṉ miḷirum puṉaṉāṭaṉ\noṉṉārai yaṭṭa kaḷattu",
+                    "kārccē ṇikanta karaimaruṅki ṉīrccērn\nterumai yeḻilē ṟeṟipavar cūṭic\ncerumiku maḷḷariṟ cemmākkuñ cevvi\ntirunutaṟ kiyāñcey kuṟi.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	The handsome buffalo\nGrown taller than\nThe bounds of the clouded sky,\nEntwined in flowers and creepers\nThat flowing waters\nCollect in neighbouring pools\nLooks up arrogantly\nAs victorious wrestlers in war.\nThe season of my return\nThe token against which\nI asked the maiden\nOf fair forehead\nTo wait, has come.\n\n2.	Passing the limit of the sky having clouds\nand reaching the waters adjourning the bund,\nThe bull with the effort of the buffalo wears on its head,\nthe dense creepers flung therein\nAnd gets intoxicated with joy, like the warrior at the battle;\nYes, this is the season, indicated by me to my beloved\nwho has elegant forehead, for my return!\n(O, Charioteer, impel please the chariot with celerity.)\n\n3.	The energetic male buffalo getting into the pool with bank higher than the cloud-spread sky, wearing the flowery creepers on its body proudly looks like the greatly valorous warriors; such an hour is the time fixed by me to my lady love with lovely forehead as the hour of my return to her (So speed up the chariot, O charioteer!).",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land\nOf copious waters\nSlew his dissenting foes,\nAs the warriors\nWho never ran away from the field\nAimed their weapons,\nThe killing elephants of uplifted horns,\nTheir foreheads blown,\nAnd their heads\nCovered in plated gear\nShone like streaks\nOf lightning.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by river Cauviri,\nHas killed his enemies,\nThe imposing frontlet tied o'er frontal globe\nOf the killing elephants which get their foreheads\nCleaved by the throwing of spears by warriors\nWho never show their back in defeat in war,\nLooks like gleaming streak of lightning\nRunning thro' dark clouds.\n\n3.	In the field of battle where the king of the riverine plains killed his enemies, the lovely golden plate on the foreheads of the deadly elephants whose foreheads were split by the unfleeing warriors throwing their javelins at them resembled lightnings (in the sable clouds).",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

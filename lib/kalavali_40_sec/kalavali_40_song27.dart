@@ -41,12 +41,11 @@ class _kalavaliSongTwentysevenState extends State<kalavaliSongTwentyseven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
                     "27.	செஞ்சேற்றுட் செல்யானை சீறி மிதித்தலால்\n     ஒண்செங் குருதிகள் தொக்கீண்டி நின்றவை\n     பூநீர் வியன்றமிடாப் போன்ற புனனாடன்\n     மேவாரை யட்ட களத்து.",
@@ -55,17 +54,26 @@ class _kalavaliSongTwentysevenState extends State<kalavaliSongTwentyseven> {
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "ceñcēṟṟuṭ celyāṉai cīṟi mitittalāl\noṇceṅ kurutikaḷ tokkīṇṭi niṉṟavai\npūnīr viyaṉṟamiṭāp pōṉṟa puṉaṉāṭaṉ\nmēvārai yaṭṭa kaḷattu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "1.	In the field of battle\nWhere the king of the land\nOf copious waters\nSlew the advancing foes,\nThe rushing elephants\nInfuriated\nTrampled under their feet\nThe mire of blood;\nAnd in the holes\nCollected\nPools of shining scarlet blood\nResembling\nA water tank of flaming flowers.\n\n2.	At the battle-field, where Chengatcholan the red-eyed\nKing of the Chola kingdom watered by River Cauviri,\nHas killed his enemies,\nThe shining and reddish blood is getting collected\nAt the cavities created\nBy the treading of the infuriated elephants\nWhich are walking in the mud mired by bloodshed;\nIt looks like a water pot which is\nReplete with reddish flowers.\n\n3.	In the battlefield when the king Senganan of the riverine plains killed his foes, the passing elephants violently treading the  blood-miry ground, blood collected in pools, in the footprints and the blood so collected in the pits resembled red flowers in large wide vessels.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

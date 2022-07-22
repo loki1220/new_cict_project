@@ -41,12 +41,11 @@ class _kalavaliSongSevenState extends State<kalavaliSongSeven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
                     "7.	அஞ்சனக் குன்றேய்க்கும் யானை யமருழக்கி\n    இங்கு லிகக்குன்றே போற்றோன்றுஞ் - செங்கண்\n    வரிவரான் மீன்பிறழுங் காவிரி நாடன்\n    பொருநரை யட்ட களத்து",
@@ -55,17 +54,26 @@ class _kalavaliSongSevenState extends State<kalavaliSongSeven> {
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "añcaṉak kuṉṟēykkum yāṉai yamaruḻakki\niṅku likakkuṉṟē pōṟṟōṉṟuñ - ceṅkaṇ\nvarivarāṉ mīṉpiṟaḻuṅ kāviri nāṭaṉ\nporunarai yaṭṭa kaḷattu",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "1.	In the field of battle\nWhere the monarch of the land\nOf Cauvery,\nWhere the red-eyed fish\nOf frilled fin frisk and play,\nSlaughtered his opponents,\nElephants\nSmeared in the battle gore\nResembled blue hillocks\nTurned crimson\nBy flamboyant jathilinga buds.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola Kingdom\nWho's ruling the land having River Cauviri,\nwhere red-eyed murrels with streaks therein\nare flopping and leaping,\nhas killed his enemies,\nThe elephants which were looking like blue mountains,\nafter ravaging at war,\nAre now appearing like the vermilion hills,\nwith their reddish colour.\n\n3.	The Chozha king Sengannan of the Cauvery region where red-eyed and striped Varal fish shining roll killed his enemies in the battle field. These elephants resembling dark hills fighting a bloody war looked like vermilion hillocks.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

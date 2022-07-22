@@ -26,7 +26,7 @@ class _karSongTwentyfourState extends State<karSongTwentyfour> {
               color: Color(0XFF000000),
             ),
           ),
-          title:  const Text("களவழி நாற்பது\nkaḷavaḻi nāṟpatu",
+          title:  const Text("கார் நாற்பது\nkār nāṟpatu",
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
@@ -41,31 +41,40 @@ class _karSongTwentyfourState extends State<karSongTwentyfour> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 950,
+            height:   MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
-                    "24.	திண்டோ ண் மறவ ரெறியத் திசைதோறும்\n     பைந்தலை பாரிற் புரள்பவை - நன்கெனைத்தும்\n     பெண்ணையந் தோட்டம் பெருவளி புக்கேற்ற\n     கண்ணார் கமழ்தெரியற் காவிரி நீர்நாடன்\n     நண்ணாரை யட்ட களத்து",
+                    "24.	எல்லா வினையுங் கிடப்ப வெழுநெஞ்சே\nகல்லோங்கு கானங் களிற்றின் மதநாறும்\nபல்லிருங் கூந்தல் பணிநோனாள் கார்வானம்\nமெல்லவுந் தோன்றும் பெயல்.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 12,
+                      fontSize: 13,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
-                    "tiṇṭō ṇ maṟava reṟiyat ticaitōṟum\npaintalai pāriṟ puraḷpavai - naṉkeṉaittum\npeṇṇaiyan tōṭṭam peruvaḷi pukkēṟṟa\nkaṇṇār kamaḻteriyaṟ kāviri nīrnāṭaṉ\nnaṇṇārai yaṭṭa kaḷattu",
+                    "ellā viṉaiyuṅ kiṭappa veḻuneñcē\nkallōṅku kāṉaṅ kaḷiṟṟiṉ matanāṟum\npalliruṅ kūntal paṇinōṉāḷ kārvāṉam\nmellavun tōṉṟum peyal.",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    "1.	The forests\nOf ranged rocks and hills\nWaft with fragrance\nOf elephants in heat.\nAthwart the dark monsoon sky\nThe falling rain-clouds\nDrizzle lightly.\nMy lady of black tresses\nOf hair manifoldly done\nWill no longer brook,\nDespite my consoling words.\nMy heart!\nLet all other tasks remain.\nCome and let us go.\n\n2.	The must of rutting elephants is smelling throughout\nthe forests having high mountains;\nAnd the rain has begun to shower slowly\nfrom the dark clouds;\nSo, my lady who's having thick dark tresses would no longer\nbear patiently my word of return,\nO, my heart, start right now (to return home), leaving\nall other acts as they are.\n\n3.	The forests with lofty mountains fill with the smell of ruttish elephants; in the dark sky the rains slowly make their appearance; so my lady love with variously dressed black locks will no more patiently wait according to my word; O heart! Leave aside all the work on hand and arise (we will go).",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
-                  Text(
-                    "1.	In the field of battle\nWhere the king of the land of Cauvery,\nOf fragrant and eye-filling garlands,\nSlew his unfriendly foes;\nThrown by warriors\nStrong and broad-shouldered,\nIn all directions,\nRolled in mud\nThe greenish-brown heads;\nAnd as these grew in number\nResembled\nA typhoon in a palm grove.\n\n2.	In the battlefield, where Chengatcholan the red-eyed\nKing of the Chola kingdom having River Cauviri,\nWho is wearing fragrant garland\nWhich is so pleasing to the eyes,\nHas killed his enemies,\nThe black-haired heads of the enemies are tumbling\nO'er the ground in all the directions\nOn account of throwing of swords by his warriors\nWho're having strong shoulders;\nAnd they look like the rolling over of palmyra fruits\nOn account of the entry and blowing of gale\nIn palmyra grove.\n\n3.	In the battlefield where the king of the Cauvery region wearing lovely sweet-smelling garlands killed his enemies, because of the sword cuts by strong-shouldered warriors' black heads (cut down) rolled on the ground on all sides and looked as if a violent storm blew over a palmyra grove (knocking down the black fruits and rolling them all round).",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/7,
                   ),
                 ],
               ),

@@ -41,12 +41,11 @@ class _kalavaliSongTwentyeightState extends State<kalavaliSongTwentyeight> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 1050,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text(
                     "28.	ஓடா மறவ ருருத்து மதஞ்செருக்கிப்\n    பீடுடை வாளார் பிறங்கிய ஞாட்பினுட்\n    கேடகத்தோ டற்ற தடக்கைகொண் டோ டி\n    இகலன்வாய்த் துற்றிய& தோற்ற மயலார்க்குக்\n    கண்ணாடி காண்பாரிற் றோன்றும் புனனாடன்\n    நண்ணாரை யட்ட களத்து.",
@@ -55,17 +54,26 @@ class _kalavaliSongTwentyeightState extends State<kalavaliSongTwentyeight> {
                       fontSize: 12,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "ōṭā maṟava ruruttu matañcerukkip\npīṭuṭai vāḷār piṟaṅkiya ñāṭpiṉuṭ\nkēṭakattō ṭaṟṟa taṭakkaikoṇ ṭō ṭi\nikalaṉvāyt tuṟṟiya& tōṟṟa mayalārkkuk\nkaṇṇāṭi kāṇpāriṟ ṟōṉṟum puṉaṉāṭaṉ\nnaṇṇārai yaṭṭa kaḷattu.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "1.	In the field of battle\nWhere the king of the land\nOf flowing waters\nSlew the unfriendly foes,\nWarriors who never ran away from the field\nFrowned big in pride and valour fought,\nTheir swords of glory\nHeld aloft;\nAnd the long hands\nStill clutching the shield\nRolled on the ground.\nThe night-prowlers\nWith these limbs in their fearful jaws\nLooked at strangers\nThrough their rolling eyes\nResembling beads of glass.\n\n2.	In the battle-field, where Chengatcholan the red-eyed\nKing of the Chola Kingdom watered by river Cauviri,\nHas killed his enemies,\nThe scene of jackals seizing by their mouth\nAnd running away with the large hands of warriors\nWhich have fallen, being cut off along with buckler,\nAt the said battlefield,\nWhere those warriors who never showed their back in defeat\nAnd who are carrying swords of victorious greatness\nAre fighting vigorously and getting exhilarated pride,\nDoes appear to those who stand nearby \nas those who see themselves in the mirror.\n\n3.	In the field of war where the king Senganan of the riverine plains killed his enemies, the unfleeing warriors furiously and with gusto fought holding in their hands their renowned swords. In such a battle, the jackals ran away holding in their mouths the enemy soldier's hand with the shield therein cut down. For the onlookers it looked as if people were looking at mirrors!",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),
