@@ -41,27 +41,27 @@ class _iniyavaiSongTwentyState extends State<iniyavaiSongTwenty> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 850,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text("19.	நட்டார்ப் புறங்கூறான் வாழ்தால் நனிஇனிதே\n    பட்டாங்கு பேணிப் பணிந்தொழுதல் முனினிதே\n    முட்டில் பெரும்பொருள் ஆக்கியக்கால் மற்றது\n    தக்குழி ஈதல் இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("naṭṭārp puṟaṅkūṟāṉ vāḻtāl naṉiiṉitē\npaṭṭāṅku pēṇip paṇintoḻutal muṉiṉitē\nmuṭṭil perumporuḷ ākkiyakkāl maṟṟatu\ntakkuḻi ītal iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("1.	Delectable to live without\nTalking behind the back of one's friends.\nMost delectable, a humble conduct\nFostering truth.\nIf one earns wealth\nVast and limitless\nDelectable to bestow it\nOn appropriate hands.\n\n2.	So good it is, not to backbite about one who's friendly;\nEminently good it's to stick on to truth\nAnd to be humble to all;\nAnd when huge wealth is made sans any want,\nGood it's to give in charity where the case\nIs a deserving one.\n\n3.	To live without backbiting our friends is most pleasing; to live in humility suffering truth is sweet beyond measure; when one earns flawless wealth in plenty, it is sweet to help the deserving with such riches",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),

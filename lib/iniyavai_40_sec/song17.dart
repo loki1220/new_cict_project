@@ -41,27 +41,27 @@ class _iniyavaiSongSeventeenState extends State<iniyavaiSongSeventeen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 800,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text("16.	சுற்றார்முன் கல்வி உரைத்தல் மிகைனிதே\n    மிக்காரைச் சேர்தல் மிகமாண முனினிதே\n    எள்துணை யானும் இரவாது தானீதல்\n    எத்துணையும் ஆற்ற இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 13,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("cuṟṟārmuṉ kalvi uraittal mikaiṉitē\nmikkāraic cērtal mikamāṇa muṉiṉitē\neḷtuṇai yāṉum iravātu tāṉītal\nettuṇaiyum āṟṟa iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("1.	Most delectable the exposition\nOf one's learning before scholars;\nMost delectable and most worthy\nBefriending of men greater than us;\nMost delectable in every respect\nIs to make gifts to others\nWhile receiving nothing\nEven as little as a seed of sesame.\n\n2.	Good it is to submit one's learning attainment\nBefore the learned,\nVery good it's to be in contact with great persons\nWho are reputed for their deeds;\nAnd excellent it is by all means to give a gift\nBy oneself to others,\nInstead of begging for alms, yes, not even a little\nAs the size of a sesame seed.\n\n3.	It is greatly sweet to show one's learning to scholars; it is highly pleasing and honourable to seek the company of learned superiors; it is most pleasing in all ways to give without in the least begging from others.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),

@@ -41,45 +41,46 @@ class _iniyavaiSongOneState extends State<iniyavaiSongOne> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 850,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("கடவுள் வாழ்த்து")
                     ],
-                  ),
+                  ),                  SizedBox(height: 15,),
                   Text("கண்மூன் றுடையான்தாள் சேர்தல் கடிதினிதே\nதொல்மாண் துழாய்மாலை யானைத் தொழலினிதே\nமுந்துறப் பேணி முகநான் குடையானைச்\nசென்றமர்ந் தேத்தல் இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 11,
-                    ),),
+                    ),),                  SizedBox(height: 15,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("kaṭavuḷ vāḻttu")
                     ],
-                  ),
+                  ),                  SizedBox(height: 15,),
                   Text("kaṇmūṉ ṟuṭaiyāṉtāḷ cērtal kaṭitiṉitē\ntolmāṇ tuḻāymālai yāṉait toḻaliṉitē\nmuntuṟap pēṇi mukanāṉ kuṭaiyāṉaic\nceṉṟamarn tēttal iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),                  SizedBox(height: 15,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("INVOCATION")
                     ],
-                  ),
+                  ),                  SizedBox(height: 15,),
                   Text("1.	Very blissful to abide at the feet\n   Of the three-eyed one (Lord Siva).\n   Blissful the devotion to the hoary\n   Thiru-thuzhai - garlanded one (Lord Vishnu).\n   Much more blissful\n   The willing devotion that seeks\n   And sits in front, and prays\n   To the four-faced one (Lord Brahma).\n\n2.	Very good it's to surrender at the sacred feet\n   Of the three-eyed Lord Siva, the Destroyer;\n   Good it's to adore Lord Vishnu, the Preserver, Who’s wearing\n   Sacred basil of ancient glory, as garland;\n   And good it is to precede and reach Lord Brahma, \n   The creator, who is having four faces, \n   Sit in front of him, worship\n   And extol the first of the Triad!\n\n3.	Greatly pleasing it is to attain the feet of the three eyed God (Siva); sweet it is to worship the God (Vishnu) of ancient glory wearing the Tulsi garland; it is sweet to go and sit before the four-faced god Brahma and worship with deep devotion.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
+
                 ],
               ),
             ),

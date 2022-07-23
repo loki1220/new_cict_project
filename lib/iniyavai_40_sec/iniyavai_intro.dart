@@ -83,7 +83,7 @@ class _iniyavaiIntroState extends State<iniyavaiIntro> {
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 25,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

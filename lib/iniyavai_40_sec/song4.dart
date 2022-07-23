@@ -41,31 +41,29 @@ class _iniyavaiSongFourState extends State<iniyavaiSongFour> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 850,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
-
                   Text("3.	ஏவது மாறா இளங்கிளைமை முன்இனிதே\n   நாளும் நவைபோகான் கற்றல் மிகஇனிதே\n   ஏருடையான் வேளாண்மை தானினிது ஆங்கினிதே\n   தேரிற்கோள் நட்புத் திசைக்கு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 10,
+                      fontSize: 11,
                     ),),
-
+                  SizedBox(height: 15,),
                   Text("ēvatu māṟā iḷaṅkiḷaimai muṉiṉite\nnāḷum navaipōkāṉ kaṟṟal mikaiṉitē\nēruṭaiyāṉ vēḷāṇmai tāṉiṉitu āṅkiṉitē\ntēriṟkōḷ naṭput ticaikku.",
                     style: TextStyle(
                       color: Colors.black,
                     ),),
-
-
+                  SizedBox(height: 15,),
                   Text("1.	Most delectable, young sons who do\nOne's biddings without forgetting.\nLearning without any blemish -\nEvery day - is delectable.\nCultivation by one who owns\nHis ploughshare is delectable.\nDelectable, likewise, when considered,\nFriendly planets in all directions.\n\n2.	So good it is, if the relative youths do not disobey\nWhat is directed;\nAnd it is eminently good to learn daily,\nBy discarding the evils;\nIt's only the ploughman's cultivation\nThat is really superb;\nAnd if considered, keeping friendship in all directions\nWould be best forever.\n\n3.  Greatly pleasing it is to have scions who do, without opposing, what they are asked to; greatly sweet it will be if one keeping away from evil daily learns; the husbandry of the tiller who possesses bullocks is prosperous, so too, if we consider, it is sweet to pick up friendship in a strange place we go to.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),

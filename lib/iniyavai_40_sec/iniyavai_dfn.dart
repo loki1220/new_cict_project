@@ -41,18 +41,7 @@ import 'package:new_cict/iniyavai_40_sec/song6.dart';
 import 'package:new_cict/iniyavai_40_sec/song7.dart';
 import 'package:new_cict/iniyavai_40_sec/song8.dart';
 import 'package:new_cict/iniyavai_40_sec/song9.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song22.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song23.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song24.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song25.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song26.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song28.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song29.dart';
-import 'package:new_cict/inna_narpatu_sec/inna_40_song30.dart';
 import 'package:new_cict/titles.dart';
-
-import '../inna_narpatu_sec/inna_40_song27..dart';
-import '../inna_narpatu_sec/inna_narpatu_dfn.dart';
 
 class iniyavai_dfn extends StatefulWidget {
   const iniyavai_dfn({Key? key}) : super(key: key);
@@ -1635,11 +1624,7 @@ class _iniyavai_dfnState extends State<iniyavai_dfn> {
                       ),
                     ],
                   ),
-                  Column(
-                    children: [
 
-                    ],
-                  ),
                 ],
               ),
             ),

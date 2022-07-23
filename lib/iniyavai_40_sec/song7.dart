@@ -41,27 +41,27 @@ class _iniyavaiSongSevenState extends State<iniyavaiSongSeven> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 830,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text("6.	ஆற்றுந் துணையால் அறஞ்செய்கை முன்இனிதே\n    பாற்பட்டார் கூறும் பயமொழி மாண்பினிதே\n    வாய்ப்புடைய ராகி வலவைகள் அல்லாரைக்\n    காப்படையக் கோடல் இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 11,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("āṟṟun tuṇaiyāl aṟañceykai muṉiṉitē\npāṟpaṭṭār kūṟum payamoḻi māṇpiṉitē\nvāyppuṭaiya rāki valavaikaḷ allāraik\nkāppaṭaiyak kōṭal iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("1.	Most delectable to be righteous\nTo the extent possible for one;\nMost delectable, the worth of wise counsel\nUttered by men of good conduct;\nDelectable to be blessed\nWith opportunities and be protected\nBy men of grace who\nNever indulge in acts of disgrace.\n\n2.	Eminently good is doing virtuous acts\nTo the extent possible;\nPar-excellence is the useful word of advice\nUttered by men of virtue;\nAnd good it is to seek the protection from those\nWho're having all means\nOf wealth, power and intrepidity\nAnd who are not immodest.\n\n3.	Doing charity to the best of one's ability is greatly pleasing; the glory of fruitful words by men of virtue is sweet; securing the patronage of people possessed of learning, wealth , power and valour, and who are not devoid of modesty is sweet.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),

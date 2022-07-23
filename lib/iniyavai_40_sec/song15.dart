@@ -41,27 +41,27 @@ class _iniyavaiSongFifteenState extends State<iniyavaiSongFifteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 800,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text("14.	குழவி தளர்நடை காண்டல் இனிதே\n    அவர்மழலை கேட்டல் அமிழ்தின் இனிதே\n    வினையுடையான் வந்தடைந்து வெய்துறும் போழ்து\n    மனனஞ்சான் ஆகல் இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 11,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("kuḻavi taḷarnaṭai kāṇṭal iṉitē\navarmaḻalai kēṭṭal amiḻtiṉ iṉitē\nviṉaiyuṭaiyāṉ vantaṭaintu veytuṟum pōḻtu\nmaṉaṉañcāṉ ākal iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("1.	Delectable to witness the babes -\nTheir tender swaying steps,\nMore delectable than the elixir of gods\nTo listen to their prattling.\nDelectable to grow fearless of heart\nWhen consequences\nOf one's past deeds smite one\nIn sorrowful times\n\n2.	Pleasing it would be, to look at the tottering walk of a babe;\nHearing their prattling is sweeter\nThan ambrosial nectar;\nAnd good it's for one  becoming not dreadful at heart\nAt all, while he has to suffer from anguish\nThat comes upon him as a consequence\nOf his evil deeds.\n\n3.	To witness the toddling of children is sweet; to hear the lisps of children is sweeter than ambrosia; it will be sweet if one who had committed sins in a former birth where he suffers the evil effects thereof boldly puts up with them.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),

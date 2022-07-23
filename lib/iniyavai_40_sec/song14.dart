@@ -41,27 +41,27 @@ class _iniyavaiSongFourteenState extends State<iniyavaiSongFourteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 800,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text("13.	மான மழிந்தபின் வாழாமை முன்இனிதே\n     தான மழியாமைத் தானடங்கி வாழ்வினிதே\n     ஊனமொண் றின்றி உயர்ந்த பொருளுடைமை\n     மானிடவர்க் கெல்லாம் இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("māṉa maḻintapiṉ vāḻāmai muṉiṉite\ntāṉa maḻiyāmait tāṉaṭaṅki vāḻviṉitē\nūṉamoṇ ṟiṉṟi uyarnta poruḷuṭaimai\nmāṉiṭavark kellām iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("1.	Delectable not to live\nAfter the loss of one's honour,\nDelectable, a life of self-humility\nWithout losing one's means of livelihood.\nDelectable to all human beings\nThe possession of immense fortunes\nAcquired through employing\nNot a single faulty means.\n\n2.	Good it is, not to live for a moment\nAfter one's honour is lost;\nSo good is the life of one who doesn't lose\nWhat he got as gift\nAnd yet keeping up self-restraint;\nAnd likewise, it would be so good for human beings all,\nTo possess great things without any flaw.\n\n3.	It will be highly desirable not to keep alive after losing one's honour; it is sweet to live in modesty without endangering one's position; it is good for all mankind if one acquires great wealth of knowledge free from any flaw.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),

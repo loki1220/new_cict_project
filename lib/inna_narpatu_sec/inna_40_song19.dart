@@ -41,27 +41,32 @@ class _innaSongNineteenState extends State<innaSongNineteen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 900,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
-
                   Text("18. உரனுடையா னுள்ள மடிந்திருத்த லின்னா\n    மறனுடை யாளுடையான் மார்பார்த்த லின்னா\n    சுரமரிய கானஞ் செலவின்னா வின்னா\n    மனவறி யாளர் தொடர்பு.",
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 11,
-                    ),),
+                      fontSize: 12,
+                    ),),SizedBox(
+                    height: 15,
+                  ),
                   Text("uraṉuṭaiyā ṉuḷḷa maṭintirutta liṉṉā\nmaṟaṉuṭai yāḷuṭaiyāṉ mārpārtta liṉṉā\ncuramariya kāṉañ celaviṉṉā viṉṉā\nmaṉavaṟi yāḷar toṭarpu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(
+                    height: 15,
+                  ),
                   Text("1.	Miserable the mental depression of a man of determination.\nMiserable the challenge of one with an army of valiant men.\nMiserable the journey in a hard-to-cross thick forest.\nAnd miserable,\nThe relationship of the poor of heart.\n\n2.	Should a man of strong mind remain an indolent,\nit would cause misery;\nIf one who's having men of military exploits rises\nclasping his breast, it would cause misery;\nProceeding to a forest thro' a narrow and difficult path,\nwould cause misery;\nAnd likewise, keeping company with base people\nwho are void of broad mind, would  cause misery.\n\n3.	It will be a grievous thing if a greatly learned man gives room for despondency; if one having valorous warriors takes to aggression it is grievous; to pass through a dense temple (an inaccessible wilderness) is painful; association with the mean-hearted is a source of grief.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
+                  ),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/6,
                   ),
                 ],
               ),

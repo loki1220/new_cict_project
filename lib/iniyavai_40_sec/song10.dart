@@ -41,27 +41,27 @@ class _iniyavaiSongTenState extends State<iniyavaiSongTen> {
         ),
         body: SingleChildScrollView(
           child: Container(
-            height: 800,
+            height: MediaQuery.of(context).size.height,
             color: Color(0xFFF9FBA5),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 22.0, ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              child: ListView(
                 children: [
                   Text("9.	தங்க ணமர்புடையார் தாம்வாழ்தல் முன்இனிதே\n    அங்கண் விசும்பின் அகல்நிலாக் காண்பினிதே\n    பங்கமில் செய்கைய ராகிப் பரிந்துயார்க்கும்\n    அன்புடைய ராதல் இனிது.",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 12,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("taṅka ṇamarpuṭaiyār tāmvāḻtal muṉiṉitē\naṅkaṇ vicumpiṉ akalnilāk kāṇpiṉitē\npaṅkamil ceykaiya rākip parintuyārkkum\naṉpuṭaiya rātal iṉitu.",
                     style: TextStyle(
                       color: Colors.black,
-                    ),),
+                    ),),SizedBox(height: 15,),
                   Text("1.	Most delectable, if men\nWho befriend us are wealthy.\nDelectable to witness the expanding\nFull-moon in the beautifully vast skies.\nDelectable to grow into\nMen of blemishless conduct\nCapable of bestowing\nA loving concern for all.\n\n2.	Good it's for one to see that those\nWho keep friendship with one live in prosperity;\nGood it's to look at the moon with a large halo around it,\nIn the beautiful wide sky;\nAnd good it's to be one who is doing faultless deeds\nAnd condescending and kind towards all.\n\n3.	It will be greatly pleasing if those under one's patronage thrive; it will be pleasing to see the full moon in the lovely far-flung sky; it will be sweet if one free from evil acts is sympathetic to all and fills them with love.",
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   ),
+                  SizedBox(height: MediaQuery.of(context).size.height/6,),
                 ],
               ),
             ),
